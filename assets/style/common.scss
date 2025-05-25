@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "sr";
+  src: url("../assets/font/SpoqaHanSansNeo-Regular.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "sm";
+  src: url("../assets/font/SpoqaHanSansNeo-Medium.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "sb";
+  src: url("../assets/font/SpoqaHanSansNeo-Bold.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "sl";
+  src: url("../assets/font/SpoqaHanSansNeo-Light.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "st";
+  src: url("../assets/font/SpoqaHanSansNeo-Thin.woff2") format("woff2");
+  font-style: normal;
+}
+
+@import "./reset.css";
+@import "./layout.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "sr";
+  color: #18171a;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+
+button.bottom-button {
+  width: 100%;
+  border-radius: 5px;
+  &.blue {
+    background-color: #1142bf;
+    color: #fff;
+  }
+}
+
+dialog {
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  padding: 0;
+}

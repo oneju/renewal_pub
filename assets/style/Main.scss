@@ -1,0 +1,144 @@
+@import "common.css";
+#MainPage {
+  position: relative;
+  background-color: #f6f8fa;
+  .content {
+    padding: 50px 30px 30px;
+    .page-title {
+      font-family: "sm";
+      font-size: 35px;
+      line-height: 50px;
+    }
+    .sub-title {
+      color: #4e5968;
+      font-size: 17px;
+      line-height: 27px;
+    }
+    .input-group {
+      position: relative;
+      input.black-border-text {
+        border: 2px solid #18171a;
+        font-size: 26px;
+        font-family: "sm";
+        height: 60px;
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        &::placeholder {
+          color: #e9eef4;
+          transition: ease-in-out 0.2s padding;
+        }
+        &:focus {
+          &::placeholder {
+            padding-left: 15px;
+          }
+        }
+      }
+      button {
+        position: absolute;
+        right: 0;
+        background: url("/assets/icons/delete-circle-gray.png") no-repeat;
+        background-size: 20px;
+        background-position: right 17px center;
+        width: 37px;
+        height: 100%;
+        font-size: 0;
+      }
+      input:placeholder-shown + button {
+        display: none;
+      }
+    }
+  }
+  .search-result {
+    li {
+      padding: 10px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ededed;
+      p {
+        font-family: "sr";
+        font-size: 16px;
+        line-height: 24px;
+        color: #4e5968;
+        span {
+          background-color: #1142bf;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .nav-bar {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.08);
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: 100%;
+      padding: 10px 0 9px;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        .img {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          img {
+            width: fit-content;
+          }
+        }
+        p {
+          font-size: 16px;
+          color: #8597ab;
+          &.on {
+            color: #18171a;
+          }
+        }
+      }
+    }
+  }
+}
+#WelcomeCoupon {
+  //   background-color: #fff;
+  padding: 20px;
+  .content {
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    background: linear-gradient(#fff, #327dff);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 20px;
+    .main-comment {
+      font-size: 24px;
+      line-height: 36px;
+      span {
+        color: #1142bf;
+      }
+    }
+    .sub-comment {
+      font-size: 16px;
+      color: #4e5968;
+    }
+    .extra-comment {
+      font-size: 14px;
+      color: #fff;
+    }
+    img {
+      width: fit-content;
+    }
+    button {
+      height: 60px;
+      font-family: "sm";
+      font-size: 18px;
+    }
+  }
+}

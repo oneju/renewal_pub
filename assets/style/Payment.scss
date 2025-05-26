@@ -1,0 +1,33 @@
+@import "common.css";
+#PaymentPage {
+  .content {
+    .content-group {
+      &:not(:first-child)::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px;
+        background-color: #f2f3f5;
+        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.08);
+      }
+      .card_title {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid #ededed;
+      }
+    }
+    .radio-flex {
+      display: flex;
+      flex-direction: column;
+      .radio-type.black {
+        &:checked {
+          accent-color: #18171a;
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

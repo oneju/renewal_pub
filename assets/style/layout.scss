@@ -10,5 +10,16 @@
     width: 100%;
     height: 100vh;
     max-width: 500px;
+    .content {
+      height: fit-content;
+      padding-bottom: 100px;
+    }
+    &:has(.util-header) {
+      padding-top: 60px;
+    }
+  }
+  &:has(dialog[open]) {
+    overflow: hidden;
+    height: 100%;
   }
 }

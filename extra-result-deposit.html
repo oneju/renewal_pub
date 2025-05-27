@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=500,user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="/style/ExtraResultDetail.css" />
+  </head>
+  <body class="App">
+    <div id="ExtraResultDetailPage" class="Page">
+      <header class="util-header">
+        <a class="back" href="extra-result.html">뒤로가기</a>
+        <h1 class="header-title">보증금</h1>
+      </header>
+      <main class="content">
+        <div class="result-summary">
+          <div class="result-summary__title mb">
+            <p>보증금 진단 결과</p>
+            <p class="font-red">위험</p>
+          </div>
+          <div class="grid-list">
+            <dl>입력 보증금</dl>
+            <dd>1억 1,000만원</dd>
+            <dl class="flex">
+              선순위채권
+              <img src="/assets/icons/info-gray.svg" />
+            </dl>
+            <dd>19억 9,400만원</dd>
+            <dl>최우선변제금</dl>
+            <dd>3,700만원</dd>
+            <dl class="flex">
+              위험 보증금
+              <img src="/assets/icons/info-gray.svg" />
+            </dl>
+            <dd class="font-red">7,300만원</dd>
+            <dl>적정 보증금</dl>
+            <dd class="font-green">3,700만원</dd>
+          </div>
+          <ul class="alert-list border mt20">
+            <li>
+              선순위 근저당권이 설정되어 있으며, 이는 선순위채권에 포함됩니다.
+              시세 대비 채권 비율이 높아 보증금 손실 위험이 큽니다.
+            </li>
+          </ul>
+        </div>
+        <div class="toggle-list">
+          <details class="toggle-content toggle-content--border" open>
+            <summary>
+              <div class="flex">
+                적정 보증금
+                <div class="border"></div>
+                <p class="status">3,700만원</p>
+              </div>
+            </summary>
+            <div class="content__detail mt30">
+              <p class="text-desc">
+                해당 주택의 실제 가치 대비 보증금이 과도하지 않은지를 판단하는
+                기준입니다. <br />
+                다음의 식으로 계산됩니다
+              </p>
+              <p class="extra-desc mt15">
+                = (추정 시세 × 예상 경매 낙찰가율) – 선순위 채권 총액
+              </p>
+              <ul class="progress-list mt30">
+                <li>
+                  <div class="flex">
+                    <p class="progress-about">추정시세</p>
+                    <p class="progress-about__content">21억 7,800만원</p>
+                  </div>
+                  <div class="progress-bar mt15">
+                    <div class="progress-bar__bar gray"></div>
+                    <div class="progress-bar__bar"></div>
+                    <div class="progress-bar__label mt10">
+                      <div class="section">8억</div>
+                      <div class="section">16억</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex">
+                    <p class="progress-about">
+                      예상 경매 낙찰가
+                      <img src="/assets/icons/info-gray.svg" alt="" />
+                    </p>
+                    <p class="progress-about__content">15억 2,460만원</p>
+                  </div>
+                  <div class="progress-bar mt15">
+                    <div class="progress-bar__bar red" style="width: 70%"></div>
+                    <div class="progress-bar__bar"></div>
+                    <div class="progress-bar__label mt10">
+                      <div class="section">8억</div>
+                      <div class="section">16억</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex">
+                    <p class="progress-about">
+                      선순위 채권
+                      <img src="/assets/icons/info-gray.svg" alt="" />
+                    </p>
+                    <p class="progress-about__content">19억 9,400만원</p>
+                  </div>
+                  <div class="progress-bar mt15">
+                    <div class="progress-bar__bar red" style="width: 90%"></div>
+                    <div class="progress-bar__bar"></div>
+                    <div class="progress-bar__label mt10">
+                      <div class="section">8억</div>
+                      <div class="section">16억</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details class="toggle-content toggle-content--border" open>
+            <summary>
+              <div class="flex">
+                최우선변제금
+                <div class="border"></div>
+                <p class="status">3,700만원</p>
+              </div>
+            </summary>
+            <div class="content__detail mt30">
+              <p class="text-desc">
+                보증금이 적은 세입자를 보호하기 위해, 특별히 우선변제를 인정하는
+                금액입니다. 전입신고와 확정일자를 모두 갖춘 경우에만 받을 수
+                있으며, 근저당권이 설정된 경우에는 그 설정일이 기준 시점이
+                됩니다.
+              </p>
+              <table>
+                <caption>
+                  출처 : 세종지역 소액임차인 기준표
+                </caption>
+                <thead>
+                  <tr>
+                    <th>기준시점</th>
+                    <th>보증금</th>
+                    <th>최우선변제</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12.7.1~13.12.31</td>
+                    <td>4,000만원 이하</td>
+                    <td>1,400만원</td>
+                  </tr>
+                  <tr class="on">
+                    <td>23.2.21~</td>
+                    <td>14,500만원 이하</td>
+                    <td>4,800만원</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="alert-list">
+                <li>
+                  법령의 개정 및 행정구역 변경에 따라 그 내용이 변경될 수 있음을
+                  주의 하시기 바랍니다
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details class="toggle-content toggle-content--border" open>
+            <summary>
+              <div class="flex">
+                추정 시세
+                <div class="border"></div>
+                <p class="status">21억 7,800만원</p>
+              </div>
+            </summary>
+            <div class="content__detail mt30">
+              <p class="text-desc">
+                KB시세, 부동산테크, 실거래가, AVM, 공시지가 중 최우선 순위
+                데이터를 반영합니다.
+              </p>
+              <div class="grid-list mt30">
+                <dl class="flex">
+                  KB 시세
+                  <img src="/assets/icons/info-gray.svg" />
+                </dl>
+                <dd>-</dd>
+                <dl class="flex">
+                  부동산테크 시세
+                  <img src="/assets/icons/info-gray.svg" />
+                </dl>
+                <dd>-</dd>
+                <dl class="flex">
+                  실거래가
+                  <img src="/assets/icons/info-gray.svg" />
+                </dl>
+                <dd>-</dd>
+              </div>
+
+              <ul class="progress-list mt30">
+                <li>
+                  <div class="flex">
+                    <p class="progress-about">
+                      AVM 시세
+                      <img src="/assets/icons/info-gray.svg" alt="" />
+                    </p>
+                    <p class="progress-about__content">21억 7,800만원</p>
+                  </div>
+                  <div class="progress-bar mt15">
+                    <div
+                      class="progress-bar__bar blue"
+                      style="width: 70%"
+                    ></div>
+                    <div class="progress-bar__bar"></div>
+                    <div class="progress-bar__label mt10">
+                      <div class="section">8억</div>
+                      <div class="section">16억</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex">
+                    <p class="progress-about">
+                      공시지가
+                      <img src="/assets/icons/info-gray.svg" alt="" />
+                    </p>
+                    <p class="progress-about__content">7억 6,700만원</p>
+                  </div>
+                  <div class="progress-bar mt15">
+                    <div
+                      class="progress-bar__bar gray"
+                      style="width: 70%"
+                    ></div>
+                    <div class="progress-bar__bar"></div>
+                    <div class="progress-bar__label mt10">
+                      <div class="section">8억</div>
+                      <div class="section">16억</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="bottom-button light-blue mt40">
+                추정시세 자세히 알아보기
+              </button>
+            </div>
+          </details>
+          <details class="toggle-content toggle-content--border" open>
+            <summary>주변 최근 전세가(유사 면적 기준)</summary>
+            <div class="content__detail border mt15">
+              <p class="text-desc mt30">
+                인근 유사 면적 매물의 최근 전세 거래 내역입니다
+              </p>
+              <table class="mt30">
+                <caption>
+                  출처 : 구토교통부 실거래가 공개시스템
+                </caption>
+                <thead>
+                  <tr>
+                    <th>계약일</th>
+                    <th>거래가</th>
+                    <th>층</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>24.12.18</td>
+                    <td>9,900</td>
+                    <td>5층</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.16</td>
+                    <td>9,000</td>
+                    <td>3층</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

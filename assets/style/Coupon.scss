@@ -1,0 +1,64 @@
+@import "common.css";
+#CouponPage {
+  background-color: #f6f8fa;
+  .content {
+    padding: 0 20px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .coupon-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        .coupon {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .coupon-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .percent {
+              font-family: "sm";
+              font-size: 24px;
+              color: #1142bf;
+            }
+            .title {
+              font-family: "sm";
+              font-size: 15px;
+            }
+            .amount {
+              font-family: "sr";
+              font-size: 13px;
+              color: #999;
+            }
+          }
+          .coupon-available {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: fit-content;
+            }
+          }
+        }
+        .expiration {
+          width: 100%;
+          text-align: center;
+          font-size: 12px;
+          color: #999;
+          border-top: 1px dashed #ededed;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

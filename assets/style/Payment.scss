@@ -1,6 +1,8 @@
 @import "common.css";
 #PaymentPage {
+  height: fit-content;
   .content {
+    padding-bottom: 100px;
     .content-group {
       &:not(:first-child)::before {
         content: "";
@@ -15,18 +17,117 @@
         justify-content: space-between;
         padding: 15px;
         border-bottom: 1px solid #ededed;
+        margin-top: 30px;
+
+        font-family: "sm";
+        font-size: 20px;
+        small {
+          font-family: "sr";
+          font-size: 16px;
+        }
+      }
+      .card_content {
+        padding: 30px 20px;
+        .available-coupon {
+          background: url("/assets/image/coupon-img.png") no-repeat #f5f6fa;
+          background-position: right 15px center;
+          border-radius: 10px;
+          font-size: 16px;
+          padding: 15px;
+        }
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-family: "sr";
+            font-size: 15px;
+          }
+          .font-gray {
+            color: #8894a0;
+          }
+          .font-gray-01 {
+            color: #4e5968;
+          }
+        }
       }
     }
     .radio-flex {
       display: flex;
       flex-direction: column;
-      .radio-type.black {
-        &:checked {
-          accent-color: #18171a;
+      gap: 20px;
+      li {
+        display: flex;
+        .radio-type.black {
+          &:checked {
+            accent-color: #18171a;
+          }
+          &:before {
+            display: none;
+          }
+          + label {
+            display: flex;
+            align-items: center;
+          }
         }
-        &:before {
-          display: none;
-        }
+      }
+    }
+    .tag {
+      font-family: "sm";
+      font-size: 14px;
+      border-radius: 3px;
+      padding: 2px 6px;
+      margin-left: 15px;
+      &.yellow {
+        background-color: #fdf2e0;
+        color: #db8319;
+      }
+      &.blue {
+        background-color: #dfe8ff;
+        color: #1142bf;
+      }
+    }
+    .page-bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      max-width: 500px;
+      background-color: rgba($color: #fff, $alpha: 0.8);
+      padding: 18px 20px;
+      button {
+        height: 60px;
+        font-family: "sm";
+        font-size: 18px;
+      }
+    }
+  }
+}
+#MaintainAlert {
+  padding: 20px;
+  .content {
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    .main-comment {
+      font-family: "sm";
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .detail-comment {
+      font-family: "sr";
+      font-size: 15px;
+      line-height: 23px;
+      color: #8894a0;
+    }
+    .button-flex {
+      height: 60px;
+      display: flex;
+      gap: 14px;
+      button {
+        font-size: 18px;
       }
     }
   }

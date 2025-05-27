@@ -44,6 +44,9 @@ body {
 .mt20 {
   margin-top: 20px;
 }
+.mt25 {
+  margin-top: 25px;
+}
 .mt30 {
   margin-top: 30px;
 }
@@ -63,7 +66,15 @@ body {
 .font-blue {
   color: #1142bf;
 }
-
+.font-green {
+  color: #00b894;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-bold {
+  font-family: "sm";
+}
 button.bottom-button {
   width: 100%;
   border-radius: 5px;
@@ -79,6 +90,10 @@ button.bottom-button {
     background-color: #dfdfdf;
     color: #999;
   }
+  &.black {
+    background-color: #18171a;
+    color: #fff;
+  }
 }
 
 dialog {
@@ -88,6 +103,7 @@ dialog {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   padding: 0;
+  z-index: 10;
 }
 
 input {
@@ -101,6 +117,7 @@ input {
       font-size: 18px;
       font-family: "sm";
       color: #bbb;
+      margin-left: 15px;
     }
     &:checked {
       appearance: auto;
@@ -136,6 +153,30 @@ input {
       }
     }
   }
+  &.file-type {
+    display: none;
+    width: 100%;
+    + label {
+      display: block;
+      width: 100%;
+      background: url("/assets/icons/open-folder-gray.svg") no-repeat;
+      background-position: left 15px center;
+      background-color: #f5f6fa;
+      padding: 20px 48px;
+      border-radius: 5px;
+      font-family: "sr";
+      font-size: 16px;
+    }
+    &.on {
+      + label {
+        background: url("/assets/icons/open-folder-blue.svg") no-repeat;
+        background-position: left 15px center;
+        background-color: #fff;
+        border: 1px solid #18171a;
+        font-family: "sr";
+      }
+    }
+  }
 }
 
 .check-list {
@@ -146,18 +187,22 @@ input {
   flex-direction: column;
   gap: 10px;
   li {
-    list-style: url("/assets/icons/check-gray.png") inside;
+    list-style: url("/assets/icons/check-gray.svg") inside;
     color: #bbb;
     font-size: 14px;
     &.on {
-      list-style: url("/assets/icons/check-blue.png") inside;
+      list-style: url("/assets/icons/check-blue.svg") inside;
       color: #1142bf;
     }
   }
 }
 
 .util-header {
-  position: relative;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  max-width: 500px;
+  top: 0;
   height: 60px;
   display: flex;
   align-items: center;
@@ -228,10 +273,11 @@ input {
 
 .alert-list {
   li {
-    list-style: url("/assets/icons/alert-gray.png");
+    list-style: url("/assets/icons/alert-gray.svg");
     font-size: 14px;
     line-height: 21px;
     color: #8894a0;
+    text-align: left;
   }
 }
 
@@ -245,11 +291,4 @@ input {
   background-color: #f5f6fa;
   background-size: 13px;
   background-position: 15px center;
-}
-
-.dot-list {
-  li {
-    list-style: "·" inside;
-    color: #8894a0;
-  }
 }

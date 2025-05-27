@@ -14,33 +14,21 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <title>SAFEHOMES</title>
-    <link rel="stylesheet" href="/style/FormStep.css" />
+    <link rel="stylesheet" href="/style/PaymentLoading.css" />
   </head>
   <body class="App">
-    <div id="StepPage" class="Page">
+    <div id="PaymentLoading" class="Page">
       <header class="util-header">
-        <a class="back" href="main.html">뒤로가기</a>
-        <h1 class="header-title">위험 요소 진단</h1>
+        <!-- <a class="back" href="main.html">뒤로가기</a> -->
+        <h1 class="header-title">추가 진단 결제</h1>
       </header>
-      <div class="content">
-        <h2 class="page-title">보증금 입력</h2>
+      <main class="content">
+        <img src="/assets/image/check-circle-blue.png" alt="" />
+        <p class="page-title mt40">결제 진행 중입니다</p>
         <p class="page-title__sub mt15">
-          현재 상황에 맞는 정확한 위험 분석 결과를 제공합니다.
+          결제 완료 후 '추가 진단' 화면으로 이동됩니다
         </p>
-        <div class="input-group mt50">
-          <input type="text" class="text-type" placeholder="백만원 단위" />
-          <div class="pr">만원</div>
-          <p class="input-result mt20">8억원</p>
-        </div>
-      </div>
-      <div class="page-bottom">
-        <button
-          class="bottom-button blue"
-          onclick="window.location='step_3.html'"
-        >
-          진단하기
-        </button>
-      </div>
+      </main>
     </div>
   </body>
 </html>

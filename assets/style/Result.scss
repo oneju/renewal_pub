@@ -106,9 +106,6 @@
     }
   }
   .content__detail {
-    &.border {
-      border-top: 1px solid #ededed;
-    }
     .alert-list {
       padding-left: 29px;
     }
@@ -127,6 +124,26 @@
         margin-left: 12px;
         font-family: "sr";
         font-size: 17px;
+      }
+    }
+    .dot-list {
+      li {
+        color: #18171a;
+        font-size: 14px;
+        position: relative;
+        padding-left: 12px;
+        text-align: left;
+        &::before {
+          content: "·";
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+      }
+      &.gray {
+        li {
+          color: #8894a0;
+        }
       }
     }
     .chart {
@@ -181,6 +198,35 @@
         font-size: 12px;
       }
     }
+    .review-card {
+      width: 100%;
+      border-radius: 10px;
+      padding: 20px 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      .card--title {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 16px;
+        }
+      }
+      .card--content {
+        border-top: 1px solid #ededed;
+        padding-top: 30px;
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+        .prev {
+          color: #8894a0;
+        }
+        .recommend {
+          background: url("/assets/icons/arrow-slim-right-blue.png") no-repeat;
+          background-position: left center;
+          padding-left: 32px;
+        }
+      }
+    }
   }
   .detail-comment {
     color: #6b7684;
@@ -207,7 +253,7 @@
       width: 100%;
       .number {
         color: #4e5968;
-        background-color: #d9dade;
+        background-color: #f2f4f6;
         border-radius: 3px;
         width: 18px;
         height: 18px;
@@ -234,7 +280,7 @@
     &::before {
       content: "";
       display: block;
-      background: url("/assets/icons/toggle-to-top.png") no-repeat;
+      background: url("/assets/icons/arrow-simple-top.png") no-repeat;
       background-size: 20px;
       background-position: right center;
       top: 0;
@@ -259,10 +305,38 @@
     summary::before {
       content: "";
       display: block;
-      background: url("/assets/icons/toggle-to-top.png") no-repeat;
+      background: url("/assets/icons/arrow-simple-top.png") no-repeat;
       background-size: 20px;
       background-position: right center;
       transform: scaleY(1);
+    }
+  }
+  .content__detail {
+    &.border {
+      border-top: 1px solid #ededed;
+    }
+  }
+}
+.toggle-content--border {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  .button-flex {
+    display: flex;
+    gap: 14px;
+    height: 50px;
+    button {
+      font-family: "sm";
+      font-size: 16px;
+    }
+  }
+  .alert-list {
+    padding-top: 20px;
+    padding-left: 29px;
+    &.border {
+      border-top: 1px dashed #ededed;
     }
   }
 }
@@ -282,10 +356,41 @@
       font-size: 20px;
       line-height: 30px;
     }
+    .detail-comment {
+      font-family: "sr";
+      font-size: 15px;
+      line-height: 23px;
+      color: #8894a0;
+    }
     .button-flex {
       height: 60px;
       display: flex;
       gap: 14px;
+      button {
+        font-size: 18px;
+      }
+    }
+    .file-type {
+      &.camera {
+        + label {
+          background: url("/assets/icons/camera-gray.svg") no-repeat;
+          background-position: left 15px center;
+          background-color: #f5f6fa;
+        }
+      }
+    }
+    .flex {
+      display: flex;
+      gap: 15px;
+      p {
+        font-family: "sr";
+        font-size: 18px;
+        color: #4e5968;
+        span {
+          font-family: "sm";
+          color: #1142bf;
+        }
+      }
     }
   }
 }
@@ -298,7 +403,7 @@ table {
     border: 1px solid rgba(0, 27, 55, 0.1);
     text-align: center;
     font-size: 14px;
-    padding: 12px 0;
+    padding: 12px 10px;
     &:first-child {
       border-left: none;
       max-width: 50%;
@@ -306,12 +411,25 @@ table {
     &:last-child {
       border-right: none;
     }
+    &.sm {
+      font-size: 13px;
+      line-height: 19px;
+    }
     small {
       color: #4e5968;
+      &.gray {
+        color: #999;
+      }
     }
     &.left {
       text-align: left;
       padding-left: 20px;
+    }
+    &.np {
+      padding: 0;
+    }
+    &.slim {
+      padding: 5px 0;
     }
   }
   th {

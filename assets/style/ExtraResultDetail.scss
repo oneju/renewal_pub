@@ -1,0 +1,223 @@
+@import "common.css";
+@import "Result.css";
+#ExtraResultDetailPage {
+  background-color: #f6f8fa;
+  .content {
+    &.building {
+      padding-bottom: 180px;
+    }
+    .result-summary {
+      margin: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 20px 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      .result-summary__title {
+        display: flex;
+        justify-content: space-between;
+        font-family: "sm";
+        font-size: 18px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ededed;
+        &.mb {
+          margin-bottom: 35px;
+        }
+      }
+      .alert-list {
+        padding-top: 20px;
+        padding-left: 20px;
+        &.border {
+          border-top: 1px dashed #ededed;
+        }
+      }
+    }
+    .toggle-list {
+      .toggle-content {
+        summary {
+          font-family: "sr";
+          font-size: 16px;
+          .flex {
+            display: flex;
+            width: calc(100% - 30px);
+            justify-content: space-between;
+            align-items: center;
+            white-space: nowrap;
+            gap: 15px;
+            .status {
+              font-family: "sm";
+              font-size: 16px;
+              white-space: nowrap;
+            }
+            .border {
+              width: 100%;
+              height: 1px;
+              background-color: #ededed;
+            }
+          }
+        }
+        .content__detail {
+          .text-desc {
+            color: #6b7684;
+            font-size: 15px;
+            line-height: 24px;
+          }
+          .extra-desc {
+            color: #323a43;
+            font-size: 14px;
+          }
+        }
+        .bottom-button {
+          height: 60px;
+          font-family: "sm";
+          font-size: 16px;
+        }
+      }
+    }
+    .progress-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      li {
+        .flex {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          .progress-about {
+            color: #4e5968;
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .progress-bar {
+      position: relative;
+      .progress-bar__bar {
+        width: 100%;
+        height: 8px;
+        background-color: #efefef;
+        border-radius: 6px;
+        &.gray {
+          position: absolute;
+          background-color: #c9d2d8;
+        }
+        &.red {
+          position: absolute;
+          background-color: #e03d38;
+        }
+        &.blue {
+          position: absolute;
+          background-color: #1142bf;
+        }
+      }
+      .progress-bar__label {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1;
+        .section {
+          position: relative;
+          color: #a9a9a9;
+          font-size: 12px;
+          text-align: center;
+          &:before {
+            z-index: 10;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 50%;
+            height: 8px;
+            border-right: 1px solid #fff;
+            top: -18px;
+          }
+        }
+      }
+    }
+    table {
+      tbody {
+        td {
+          .left {
+            text-align: left;
+          }
+          p.gray {
+            color: #8894a0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .page-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+
+    padding: 18px 20px;
+    button {
+      height: 60px;
+      font-family: "sm";
+      font-size: 18px;
+    }
+  }
+  .page-bottom {
+    &.rounded {
+      button {
+        border-radius: 10px;
+      }
+    }
+  }
+}
+#InformCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    height: fit-content;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    .main-comment {
+      font-family: "sm";
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .detail-comment {
+      font-family: "sr";
+      font-size: 15px;
+      line-height: 23px;
+      color: #8894a0;
+    }
+    .button-flex {
+      height: 60px;
+      display: flex;
+      gap: 14px;
+      button {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.input-label-group {
+  .label {
+    color: rgba(78, 89, 104, 0.7);
+    font-size: 13px;
+  }
+  .input-type-border {
+    width: 100%;
+    background-color: #f2f4f6;
+    border: 1px solid #edeff2;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    &.select {
+      background: url("/assets/icons/arrow-simple-bottom-gray.png") no-repeat
+        #f2f4f6;
+      background-position: right 20px center;
+    }
+  }
+}

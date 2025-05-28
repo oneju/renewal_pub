@@ -1,0 +1,52 @@
+@import "common.css";
+#SigninPage {
+  .content {
+    padding: 20px;
+    padding-top: 50px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .page-title--sub {
+      color: #8894a0;
+      font-size: 15px;
+    }
+  }
+  .input-group {
+    position: relative;
+    .pr {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      right: 0;
+      top: 19px;
+      font-size: 14px;
+      display: flex;
+      gap: 10px;
+      .gray {
+        color: #999;
+      }
+    }
+    .input-result {
+      width: 100%;
+      text-align: right;
+      font-family: "sm";
+      font-size: 20px;
+      color: #1142bf;
+    }
+  }
+  .page-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    padding: 18px 20px;
+    button {
+      height: 60px;
+      font-family: "sm";
+      font-size: 18px;
+    }
+  }
+}

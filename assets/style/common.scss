@@ -142,15 +142,22 @@ input {
     font-family: "sm";
     height: 60px;
     width: 100%;
-    border-bottom: 1px solid #18171a;
+    border-bottom: 1px solid #ededed;
     &::placeholder {
       color: #e9eef4;
       transition: ease-in-out 0.2s padding;
     }
     &:focus {
+      border-bottom: 1px solid #18171a;
       &::placeholder {
         padding-left: 15px;
       }
+    }
+    &:not(:placeholder-shown) {
+      border-bottom: 1px solid #18171a;
+    }
+    &.left {
+      padding-left: 10px;
     }
   }
   &.file-type {
@@ -173,7 +180,7 @@ input {
         background-position: left 15px center;
         background-color: #fff;
         border: 1px solid #18171a;
-        font-family: "sr";
+        font-family: "sm";
       }
     }
   }
@@ -219,6 +226,19 @@ input {
   }
   .header-title {
     font-family: "sr";
+    font-size: 18px;
+  }
+}
+.page-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  // background-color: rgba($color: #fff, $alpha: 0.8);
+  padding: 18px 20px;
+  button {
+    height: 60px;
+    font-family: "sm";
     font-size: 18px;
   }
 }

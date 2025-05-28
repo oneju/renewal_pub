@@ -1,0 +1,152 @@
+@import "common.css";
+#SignupPage {
+  width: 100%;
+  max-width: 500px;
+  .content {
+    padding: 20px;
+    padding-top: 50px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .page-title--sub {
+      color: #8894a0;
+      font-size: 15px;
+    }
+    .page-content {
+      width: 100%;
+    }
+    .flex-row {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+    }
+    .radio-select-char {
+      display: none;
+      + label {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 80px;
+        border: 1px solid #f5f6fa;
+        &.per_1 {
+          background: url("/assets/image/person_1.svg") no-repeat;
+          background-position: bottom 100px center;
+          background-color: #f5f6fa;
+        }
+        &.per_2 {
+          background: url("/assets/image/person_2.svg") no-repeat;
+          background-position: bottom 100px center;
+          background-color: #f5f6fa;
+        }
+        p {
+          font-size: 20px;
+        }
+        small {
+          color: #8894a0;
+          font-size: 15px;
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid #ededed;
+          background-color: #fff;
+          border-radius: 5px;
+          top: 10px;
+          left: 10px;
+        }
+      }
+      &:checked {
+        + label {
+          border: 1px solid #18171a;
+          background-color: #fff;
+
+          &.per_1 {
+            background: url("/assets/image/person_1_blue.svg") no-repeat;
+            background-position: bottom 100px center;
+            background-color: #fff;
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            // border: 1px solid #ededed;
+            background: url("/assets/icons/check-white.png") no-repeat;
+            background-position: center;
+            background-color: #1042bf;
+            border-radius: 5px;
+            top: 10px;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.check-type {
+  display: none;
+  + label {
+    display: block;
+    position: relative;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #f5f6fa;
+    &.all {
+      border: 1px solid transparent;
+      font-family: "sm";
+      font-size: 18px;
+    }
+    &.link {
+      background: url("/assets/icons/arrow-simple-right.png") no-repeat;
+      background-position: right 15px center;
+      &:before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      border-radius: 5px;
+      border: 1px solid #d9dade;
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      left: 15px;
+    }
+  }
+  &:checked {
+    + label {
+      background-color: #fff;
+      &:before {
+        background: url("/assets/icons/check-white.png") no-repeat #1042bf;
+        background-size: 6px;
+        border: 1px solid transparent;
+        background-position: center;
+      }
+      &.all {
+        border: 1px solid #18171a;
+
+        &:before {
+          background: url("/assets/icons/check-white.png") no-repeat #1042bf;
+          border: 1px solid transparent;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

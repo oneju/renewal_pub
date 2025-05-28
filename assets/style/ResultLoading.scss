@@ -49,7 +49,7 @@
       }
     }
     .progress-circle-percent {
-      animation: fill-circle 4s infinite;
+      animation: fill-circle 4s;
       stroke-dasharray: 264;
     }
   }
@@ -70,9 +70,9 @@
 
 @keyframes fill-circle {
   0% {
-    stroke-dashoffset: 248; // 시작: 안 보임
+    stroke-dashoffset: 248;
   }
   100% {
-    stroke-dashoffset: 16; // 끝: 완전히 그려짐
+    stroke-dashoffset: 16;
   }
 }

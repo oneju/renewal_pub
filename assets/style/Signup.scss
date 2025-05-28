@@ -81,7 +81,7 @@
             width: 20px;
             height: 20px;
             // border: 1px solid #ededed;
-            background: url("/assets/icons/check-white.png") no-repeat;
+            background: url("/assets/icons/check-white.svg") no-repeat;
             background-position: center;
             background-color: #1042bf;
             border-radius: 5px;
@@ -110,7 +110,7 @@
       font-size: 18px;
     }
     &.link {
-      background: url("/assets/icons/arrow-simple-right.png") no-repeat;
+      background: url("/assets/icons/arrow-simple-right.svg") no-repeat;
       background-position: right 15px center;
       &:before {
         width: 16px;
@@ -133,7 +133,7 @@
     + label {
       background-color: #fff;
       &:before {
-        background: url("/assets/icons/check-white.png") no-repeat #1042bf;
+        background: url("/assets/icons/check-white.svg") no-repeat #1042bf;
         background-size: 6px;
         border: 1px solid transparent;
         background-position: center;
@@ -142,7 +142,7 @@
         border: 1px solid #18171a;
 
         &:before {
-          background: url("/assets/icons/check-white.png") no-repeat #1042bf;
+          background: url("/assets/icons/check-white.svg") no-repeat #1042bf;
           border: 1px solid transparent;
           background-position: center;
         }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="/style/FormStep.css" />
+  </head>
+  <!-- 계약 중 플로우  -->
+  <body class="App">
+    <div id="StepPage" class="Page">
+      <header class="util-header">
+        <a class="back" href="main.html">뒤로가기</a>
+        <h1 class="header-title">위험 요소 진단</h1>
+      </header>
+      <main class="content">
+        <h2 class="page-title">보증보험 가입 여부</h2>
+        <p class="page-title__sub mt15">
+          현재 상황에 맞는 정확한 위험 분석 결과를 제공합니다
+        </p>
+        <ul class="radio-select-list mt50">
+          <li>
+            <input
+              type="radio"
+              class="radio-type"
+              name="radio-4"
+              id="0"
+              checked
+            />
+            <label for="0">네, 가입했어요</label>
+          </li>
+          <li>
+            <input type="radio" class="radio-type" name="radio-4" id="1" />
+            <label for="1">아니오, 가입하지 않았어요</label>
+          </li>
+        </ul>
+      </main>
+      <div class="page-bottom">
+        <button
+          class="bottom-button blue"
+          onclick="window.location='result_1.html'"
+        >
+          위험 요소 진단하기
+        </button>
+      </div>
+    </div>
+  </body>
+  <dialog id="ProcessNotice">
+    <div class="content">
+      <p class="main-comment">[봉천동 1529-17] 숨은 이력을 조회 중입니다</p>
+      <div class="flex mt20">
+        <p><span> 100% </span></p>
+        <p>1차 진단 결과 생성 중 ..</p>
+      </div>
+      <ul class="check-list mt20">
+        <li class="on">예상 경매 낙찰가를 반영 중입니다</li>
+        <li>적정 가계약금, 중개보수 정보를 반영 중입니다</li>
+      </ul>
+    </div>
+  </dialog>
+</html>

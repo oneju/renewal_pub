@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="/style/Result.css" />
+  </head>
+  <body class="App">
+    <div id="ResultPage" class="Page">
+      <header class="util-header">
+        <a class="back" href="main.html">뒤로가기</a>
+        <h1 class="header-title">1차 진단 결과</h1>
+      </header>
+      <details class="toggle-content toggle-content--border" open>
+        <summary>입력 정보</summary>
+        <div class="content__detail border mt15">
+          <p class="location-info mt30">서울특별시 관악구 장군봉5길 30-12</p>
+          <ul class="grid-list mt30">
+            <dl>보증금</dl>
+            <dd class="left">1억 1,000만원</dd>
+            <dl>선순위 보증금</dl>
+            <dd class="left">
+              <div class="none">
+                미입력
+                <img src="/assets/icons/info-gray.svg" />
+                <span class="underline">변경</span>
+              </div>
+            </dd>
+            <dl>보증보험</dl>
+            <dd class="left">
+              <div class="none">
+                미가입
+                <span class="underline">변경</span>
+              </div>
+            </dd>
+            <dl>
+              세금 완납증명서<br />
+              <small> 국세·지방세 </small>
+            </dl>
+            <dd class="left">
+              <div class="none">
+                미입력
+                <img src="/assets/icons/info-gray.svg" />
+                <span class="underline">변경</span>
+              </div>
+            </dd>
+          </ul>
+          <div class="button-flex mt40">
+            <button class="bottom-button blue">우리집으로 등록</button>
+          </div>
+          <ul class="alert-list border mt30">
+            <li>
+              <span class="font-red"
+                >선순위 보증금을 입력하지 않으면 진단 결과가 부정확할 수
+                있습니다.</span
+              >
+              정확한 리스크 분석을 위해, 반드시 확인 후 입력해 주세요
+            </li>
+            <li class="mt20">
+              우리집으로 등록하면 계약 종료까지 보증금 보호를 위한 케어가
+              시작됩니다
+            </li>
+          </ul>
+        </div>
+      </details>
+      <main class="content mt30">
+        <ul class="content__tabs">
+          <li>
+            <input type="radio" name="tab" id="1" checked />
+            <label for="1">1차 진단 요약</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="2"
+              onclick="window.location='result_2.html'"
+            />
+            <label for="2">상황별 대응 가이드</label>
+          </li>
+        </ul>
+        <div class="">
+          <p class="content__title mt50">
+            이 결과는 공공데이터 및 자체 수집 정보를 활용한 기본 위험
+            분석입니다.
+          </p>
+          <p class="content__title-sub mt15">
+            안전한 계약을 위해,<br />
+            등기부등본을 통한 유료 심층 진단을 권장합니다
+          </p>
+          <ul class="content__nav mt50">
+            <li class="on">보증금</li>
+            <li>임대인</li>
+            <li>등기·건축물</li>
+          </ul>
+          <ul>
+            <li class="content__info-group">
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>적정 보증금</p>
+                  <p class="font-red">추가 진단 필요</p>
+                </div>
+                <div class="content__detail border mt15">
+                  <p class="detail-comment mt30">
+                    보증금이 주택 가치 대비 적정한지 판단하여 깡통전세 위험을
+                    평가하는 지표입니다.
+                  </p>
+                  <div class="grid-list mt30">
+                    <dl>추정시세</dl>
+                    <dd>21억 7,800만원</dd>
+                    <dl class="flex">
+                      예상경매낙찰가 <img src="/assets/icons/info-gray.svg" />
+                    </dl>
+                    <dd>15억 2,460만원</dd>
+                    <dl class="flex">
+                      선순위보증금
+                      <img src="/assets/icons/info-gray.svg" />
+                    </dl>
+                    <dd>
+                      <div class="none">
+                        미입력
+                        <span class="underline">변경</span>
+                      </div>
+                    </dd>
+                    <dl class="flex">
+                      선순위채권
+                      <img src="/assets/icons/info-gray.svg" />
+                    </dl>
+                    <dd class="font-red">등기부등본 분석 필요</dd>
+                  </div>
+                </div>
+              </div>
+              <details class="toggle-content mt50" open>
+                <summary>추정 시세</summary>
+                <div class="content__detail border mt15">
+                  <div class="amount-text mt30">
+                    21억 7,800<small>만원</small>
+                  </div>
+                  <p class="detail-comment mt20">
+                    KB시세, 부동산테크, 실거래가, AVM, 공시지가 중 최우선 순위
+                    데이터를 반영합니다.
+                  </p>
+                  <div class="chart mt30">
+                    <div class="bar-graph">
+                      <ul>
+                        <li class="bar" style="height: 4px"></li>
+                        <li class="bar" style="height: 4px"></li>
+                        <li class="bar" style="height: 4px"></li>
+                        <li class="bar on" style="height: 221px"></li>
+                        <li class="bar" style="height: 60px"></li>
+                      </ul>
+                    </div>
+                    <ul class="column">
+                      <li>21억</li>
+                      <li>17억</li>
+                      <li>13억</li>
+                      <li>9억</li>
+                      <li>4억</li>
+                    </ul>
+                    <ul class="row">
+                      <li>KB시세</li>
+                      <li>부동산테크</li>
+                      <li>실거래가</li>
+                      <li>AVM</li>
+                      <li>공시지가</li>
+                    </ul>
+                  </div>
+                  <button class="bottom-button light-blue mt40">
+                    추정시세 자세히 알아보기
+                  </button>
+                </div>
+              </details>
+              <details class="toggle-content mt50" open>
+                <summary>주변 최근 전세가 (유사 면적 기준)</summary>
+                <div class="content__detail border mt15">
+                  <p class="detail-comment mt30">
+                    인근 유사 면적 매물의 최근 전세 거래 내역입니다.
+                  </p>
+                  <table class="mt30">
+                    <caption>
+                      출처 : 국토교통부 실거래가 공개시스템
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>계약일</th>
+                        <th>거래가</th>
+                        <th>층</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>24.12.18</td>
+                        <td>9,900</td>
+                        <td>5층</td>
+                      </tr>
+                      <tr>
+                        <td>24.12.16</td>
+                        <td>9,000</td>
+                        <td>3층</td>
+                      </tr>
+                      <tr>
+                        <td>24.12.16</td>
+                        <td>1억</td>
+                        <td>6층</td>
+                      </tr>
+                      <tr>
+                        <td>24.11.02</td>
+                        <td>1억</td>
+                        <td>6층</td>
+                      </tr>
+                      <tr>
+                        <td>24.10.22</td>
+                        <td>1억</td>
+                        <td>6층</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="bottom-button light-blue mt20">
+                    거래내역 더보기
+                  </button>
+                </div>
+              </details>
+
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>최우선변제금</p>
+                  <p class="font-red">추가 진단 필요</p>
+                </div>
+                <div class="content__detail border mt15">
+                  <p class="detail-comment mt30">
+                    소액임차인의 경우, 보증금 중 일정액을 다른 채권보다 우선
+                    변제받을 수 있는 금액입니다(주택임대차보호법)
+                  </p>
+                  <p class="detail-comment mt20">
+                    전입신고 및 확정일자, 실제 거주 요건을 갖추어야 하며,
+                    최우선변제금액 및 대상 보증금 기준은 주택 소재지 및 최초
+                    담보물권 설정일(예: 근저당권 설정일)에 따라 다릅니다 (선순위
+                    담보물권이 없다면 임대차계약일 기준)
+                  </p>
+                  <table>
+                    <caption>
+                      출처: 세종지역 소액임차인 기준표
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>기준시점</th>
+                        <th>보증금</th>
+                        <th>최우선변제</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>18.9.18~21.5.10</td>
+                        <td>10,000만원 이하</td>
+                        <td>3,400만원</td>
+                      </tr>
+                      <tr>
+                        <td>14.1.1~16.3.30</td>
+                        <td>4,500만원 이하</td>
+                        <td>1,500만원</td>
+                      </tr>
+                      <tr>
+                        <td>16.3.31~18.9.17</td>
+                        <td>6,000만원 이하</td>
+                        <td>2,000만원</td>
+                      </tr>
+                      <tr>
+                        <td>21.5.11~23.2.20</td>
+                        <td>13,500만원 이하</td>
+                        <td>4,300만원</td>
+                      </tr>
+                      <tr class="on">
+                        <td>23.2.21~</td>
+                        <td>14,500만원 이하</td>
+                        <td>4,800만원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul class="alert-list mt20">
+                    <li>
+                      본 정보는 참고용이며, 법령 개정에 따라 달라질 수 있습니다
+                      정확한 내용은 유료 진단을 통해 확인하세요.
+                    </li>
+                  </ul>
+                  <button class="bottom-button light-blue mt40">
+                    최우선변제금 자세히 알아보기
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="content__info-group">
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>임대인 정보</p>
+                </div>
+                <div class="content__detail mt15">
+                  <table>
+                    <caption>
+                      기준 : 등기부등본
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>소유자 정보</th>
+                        <th>공동소유</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>류광렬</td>
+                        <td>외 1명</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <ul class="alert-list">
+                            <li>
+                              공동소유의 경우, 모든 소유자의 동의 및 계약 참여가
+                              필요합니다. 계약 시 등기부등본상 소유자 전원의
+                              신분증과 계약 의사를 반드시 확인하세요
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>임대인 세금 완납 증명서</p>
+                  <p class="font-yellow">확인 필요</p>
+                </div>
+                <div class="toggle-content">
+                  <div class="content__detail border mt15">
+                    <p class="detail-comment mt30">
+                      <span
+                        >2023년 4월 18일부터, 임차인은 임대인의 국세·지방세 체납
+                        여부를 계약 전에 확인할 수 있는 법적 권리를
+                        가집니다.</span
+                      >
+                      세금 체납은 보증금보다 우선 변제될 수 있기 때문에,확인
+                      없이 계약하면 심각한 손해로 이어질 수 있습니다
+                    </p>
+                    <p class="detail-comment mt20">
+                      계약이 이미 체결된 경우에도, 가능한 한 빠르게 임대인에게
+                      국세·지방세 완납증명서 또는 미납세금 열람 동의를 요청해야
+                      합니다. 이는 향후 보증금 미반환 위험을 줄이기 위한
+                      최소한의 조치입니다
+                    </p>
+                    <button class="bottom-button light-blue mt40">
+                      요청 예시 문구 확인
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>임대인 및 계좌 정보 확인</p>
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>등기부상 소유자</th>
+                        <th>입금 계좌 명의인</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>류광렬</td>
+                        <td class="font-red">확인필요</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <ul class="alert-list">
+                            <li>
+                              계약서에 적힌 계좌 명의가 등기부등본과
+                              건축물대장에 기재된
+                              <span class="font-black">임대인(류광렬)</span>과
+                              일치하는지 반드시 확인해야 합니다.
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>임대인 위험 요소 진단</p>
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <colgroup>
+                      <col width="50%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>HUG 악성임대인</th>
+                        <th>국세청 고액체납자</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class="font-red">동명이인 발견</p>
+
+                          <ul class="dot-list gray mt15">
+                            <li>경북 구미시 인동 32길 44-2, 101호</li>
+                            <li class="mt10">만 28세(24년 기준)</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <p class="font-red">동명이인 발견</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <ul class="alert-list">
+                            <li>
+                              조회된 정보가 계약하려는 임대인과 동일인인지 추가
+                              확인이 필요합니다. 등기부등본상 정보와 대조하고,
+                              필요한 경우 임대인에게 직접 문의하십시오.
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class="content__info-group">
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>소유지분현황(갑구)</p>
+                  <img
+                    src="/assets/icons/info-gray.svg"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                  />
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <colgroup>
+                      <col width="115px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>현재 소유자</th>
+                        <td class="left">류광렬</td>
+                      </tr>
+                      <tr>
+                        <th>소유 형태</th>
+                        <td class="left">외 1명</td>
+                      </tr>
+                      <tr>
+                        <th>취득일</th>
+                        <td class="left">2012.12.24</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>
+                    소유지분을 제외한 <br />
+                    소유권에 관한 사항(갑구)
+                  </p>
+                  <img
+                    src="/assets/icons/info-gray.svg"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                  />
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <colgroup>
+                      <col width="100px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>주요 등기</th>
+                        <th>내용</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <td class="font-red" colspan="2">확인 필요</td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>(근)저당권 및 전세권 등 (을구)</p>
+                  <img
+                    src="/assets/icons/info-gray.svg"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                  />
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <colgroup>
+                      <col width="100px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>주요 등기</th>
+                        <th>내용</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <td class="font-red" colspan="2">확인 필요</td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>주요 사실 관계</p>
+                  <img
+                    src="/assets/icons/info-gray.svg"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                  />
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <colgroup>
+                      <col width="30%" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>소유자</th>
+                        <td class="left">
+                          <p class="font-red">공동소유 확인필요</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>계약 대상 층</th>
+                        <td class="left">3층</td>
+                      </tr>
+                      <tr>
+                        <th>주 용도</th>
+                        <td class="left">다가구주택</td>
+                      </tr>
+                      <tr>
+                        <th>전용 면적</th>
+                        <td class="left">
+                          <p class="text-bold">169.1㎡</p>
+                          <p class="gray mt10">
+                            계약 면적과 건축물대장상 면적이 일치하는지 확인해야
+                            합니다
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>위반 건축물 여부</th>
+                        <td class="left">
+                          <p class="font-red">확인필요</p>
+                          <p class="gray mt10">
+                            건축물대장과 실제 건물이 다를 경우 위반 건축물 일 수
+                            있습니다. 보증보험 가입 거절, 경매 시 감가, 전세대출
+                            제한 등 불이익으로 보증금 회수에 영향을 줄 수
+                            있습니다
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>건물 기본 정보</p>
+                  <img
+                    src="/assets/icons/info-gray.svg"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                  />
+                </div>
+                <div class="content__detail mt20">
+                  <table>
+                    <colgroup>
+                      <col width="30%" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>소재지(도로명)</th>
+                        <td class="left">서울 관악구 장군봉5길 30-12</td>
+                      </tr>
+                      <tr>
+                        <th>소재지(지번)</th>
+                        <td class="left">서울 관악구 봉천동 1529-17</td>
+                      </tr>
+                      <tr>
+                        <th>총 세대수</th>
+                        <td class="left">
+                          1세대
+                          <p class="gray">
+                            다가구 주택은 건축물대장상 1세대로 표기되나, 실제
+                            여러 가구가 거주할 수 있습니다. 선순위 보증금 확인이
+                            중요합니다
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>총 주차 대수</th>
+                        <td class="left">3대</td>
+                      </tr>
+                      <tr>
+                        <th>건물 층수</th>
+                        <td class="left">지상 4층 / 지하 1층</td>
+                      </tr>
+                      <tr>
+                        <th>승강기</th>
+                        <td class="left">1대</td>
+                      </tr>
+                      <tr>
+                        <th>사용승인일</th>
+                        <td class="left">2020.11.06</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-block mt50">
+                <div class="info__title">
+                  <p>과거 권리침해 이력</p>
+                  <img
+                    src="/assets/icons/info-gray.svg"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                  />
+                </div>
+                <div class="content__detail mt20">
+                  <table class="mt30">
+                    <thead>
+                      <tr>
+                        <th>주요 등기</th>
+                        <th>내용</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2" class="font-red">확인필요</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="bottom-button blue mt50">
+                    모든 위험 상세 분석
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
+  <dialog id="ConfirmNotice">
+    <div class="content">
+      <p class="main-comment">선순위 보증금</p>
+      <p class="detail-comment mt15">
+        해당 주택에 먼저 거주 중인 임차인들의 보증금 총액입니다. 이는 임대인이
+        먼저 반환해야 하는 채무로, 신규 임차인의 보증금 회수 가능성에 직접적인
+        영향을 미칩니다
+      </p>
+      <div class="button-flex mt50">
+        <button class="bottom-button light-blue">변경</button>
+        <button class="bottom-button black">확인</button>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="ConfirmNotice">
+    <div class="content">
+      <p class="main-comment">요청 예시 문구</p>
+      <img src="/assets/image/quote-start.svg" class="mt30" alt="" />
+      <p class="detail-comment mt10">
+        안녕하세요.<br />
+        ○○호에 거주 중인 임차인입니다.
+      </p>
+      <p class="detail-comment mt15">
+        보증금 관련 확인 차원에서, 임대인의 국세 및 지방세 완납 여부를
+        확인하고자 합니다. 번거로우시겠지만, 완납 증명서를 제공해주시면
+        감사하겠습니다.
+      </p>
+      <p class="detail-comment mt15">
+        세금 체납 여부에 따라 추후 문제가 발생할 수 있어 사전에 확인하고자 하는
+        목적입니다, 확인 가능하시다면, 서류를 전달 부탁드립니다. 감사합니다
+      </p>
+      <div class="button-flex mt50">
+        <button class="bottom-button light-blue">문구 복사</button>
+        <button class="bottom-button black">확인</button>
+      </div>
+    </div>
+  </dialog>
+</html>

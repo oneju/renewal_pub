@@ -57,6 +57,7 @@
     .content__title {
       font-size: 20px;
       line-height: 31px;
+      font-family: "sm";
     }
     .content__title-sub {
       font-size: 15px;
@@ -73,7 +74,7 @@
         background-color: #fff;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
         &.on {
-          background: url("/assets/icons/check-white.png") no-repeat;
+          background: url("/assets/icons/check-white.svg") no-repeat;
           background-position: right 15px center;
           background-color: #18141a;
           color: #fff;
@@ -221,7 +222,7 @@
           color: #8894a0;
         }
         .recommend {
-          background: url("/assets/icons/arrow-slim-right-blue.png") no-repeat;
+          background: url("/assets/icons/arrow-slim-right-blue.svg") no-repeat;
           background-position: left center;
           padding-left: 32px;
         }
@@ -266,6 +267,19 @@
       }
     }
   }
+  .guide-content {
+    .num-list {
+      background-color: #f6f8fa;
+      padding-top: 30px;
+      width: calc(100% + 40px);
+      li {
+        .number {
+          background-color: #d9dade;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
 }
 
 .toggle-content {
@@ -280,7 +294,7 @@
     &::before {
       content: "";
       display: block;
-      background: url("/assets/icons/arrow-simple-top.png") no-repeat;
+      background: url("/assets/icons/arrow-simple-top.svg") no-repeat;
       background-size: 20px;
       background-position: right center;
       top: 0;
@@ -298,14 +312,14 @@
       color: #1142bf;
       border-radius: 3px;
       height: 100%;
-      padding: 0 7px;
+      padding: 3px 7px;
     }
   }
   &[open] {
     summary::before {
       content: "";
       display: block;
-      background: url("/assets/icons/arrow-simple-top.png") no-repeat;
+      background: url("/assets/icons/arrow-simple-top.svg") no-repeat;
       background-size: 20px;
       background-position: right center;
       transform: scaleY(1);

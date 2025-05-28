@@ -37,49 +37,35 @@
           />
           <button>버튼</button>
         </div>
-      </div>
-      <ul class="search-result">
-        <li onclick="window.location='step_1.html'">
-          <p>
-            서울특별시 관악구 장군봉5길 30-12 루시[
-            <span>봉천동 1529-17</span> ]
-          </p>
-        </li>
-      </ul>
-      <div class="nav-bar">
-        <ul>
-          <li>
-            <div class="img">
-              <img src="/assets/icons/home-nav/location-icon-blue.svg" />
-            </div>
-            <p class="on">집 진단하기</p>
-          </li>
-          <li>
-            <div class="img">
-              <img src="/assets/icons/home-nav/person-icon-gray.svg" />
-            </div>
-            <p>우리 집</p>
-          </li>
-          <li>
-            <div class="img">
-              <img src="/assets/icons/home-nav/etc-icon-gray.svg" />
-            </div>
-            <p>전체</p>
+        <ul class="search-result mt30">
+          <li class="click" onclick="window.location='step_1.html'">
+            <p>
+              서울특별시 관악구 장군봉5길 30-12 루시[
+              <span>봉천동 1529-17</span> ]
+            </p>
           </li>
         </ul>
       </div>
+      <ul class="nav-bar">
+        <li class="click">
+          <div class="img">
+            <img src="/assets/icons/home-nav/location-icon-blue.svg" />
+          </div>
+          <p class="on">집 진단하기</p>
+        </li>
+        <li class="click">
+          <div class="img">
+            <img src="/assets/icons/home-nav/person-icon-gray.svg" />
+          </div>
+          <p>우리 집</p>
+        </li>
+        <li class="click">
+          <div class="img">
+            <img src="/assets/icons/home-nav/etc-icon-gray.svg" />
+          </div>
+          <p>전체</p>
+        </li>
+      </ul>
     </div>
-    <dialog id="WelcomeCoupon">
-      <div class="content">
-        <p class="main-comment">가입을 환영합니다</p>
-        <p class="main-comment" style="font-family: sm">
-          첫 진단 <span>40%</span>할인 쿠폰 증정
-        </p>
-        <p class="sub-comment mt20">전세 리스크 진단, 시작해 보세요</p>
-        <img class="mt40" src="/assets/image/welcome-event-img.svg" alt="" />
-        <button class="bottom-button blue mt50">확인</button>
-        <p class="extra-comment mt20">쿠폰은 가입일 기준 7일간만 유효합니다</p>
-      </div>
-    </dialog>
   </body>
 </html>

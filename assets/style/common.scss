@@ -73,6 +73,9 @@ body {
 .text-bold {
   font-family: "sm";
 }
+.click {
+  cursor: pointer;
+}
 button.bottom-button {
   width: 100%;
   border-radius: 5px;
@@ -265,6 +268,7 @@ input {
   dd {
     display: flex;
     justify-content: flex-end;
+    height: fit-content;
     .none {
       display: flex;
       align-items: center;

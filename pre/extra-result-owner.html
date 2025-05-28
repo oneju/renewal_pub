@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta property="og:url" content="" />
@@ -186,43 +189,30 @@
         </div>
       </main>
     </div>
-    <dialog id="InformCheck" open>
-      <div class="content">
-        <p class="main-comment">계좌 명의자와 임대인 정보 비교</p>
-        <div>
-          <div class="input-label-group">
-            <p class="label">예금주 성함</p>
-            <input
-              type="text"
-              class="input-type-border text mt10"
-            />
-          </div>
-          <div class="input-label-group mt20">
-            <p class="label">예금주 생년월일</p>
-            <input
-              type="text"
-              class="input-type-border text mt10"
-            />
-          </div>
-          <div class="input-label-group mt20">
-            <p class="label">은행 선택</p>
-            <div class="input-type-border mt10 select">
-                국민은행
-            </div>
-          </div>
-          <div class="input-label-group mt20">
-              <p class="label">계좌번호</p>
-              <input
-              type="text"
-              class="input-type-border text mt10"
-              />
-            </div>
-        </div>
-        <div class="button-flex mt50">
-            <button class="bottom-button blue">일치 여부 확인하기</button>
-        </div>
-    </div>
-      </div>
-    </dialog>
   </body>
+  <dialog id="InformCheck">
+    <div class="content">
+      <h3 class="main-comment">계좌 명의자와 임대인 정보 비교</h3>
+      <div class="input-label-group mt30">
+        <p class="label">예금주 성함</p>
+        <input type="text" class="input-type-border text mt10" />
+      </div>
+      <div class="input-label-group mt20">
+        <p class="label">예금주 생년월일</p>
+        <input type="text" class="input-type-border text mt10" />
+      </div>
+      <div class="input-label-group mt20">
+        <p class="label">은행 선택</p>
+        <div class="input-type-border mt10 select">국민은행</div>
+      </div>
+      <div class="input-label-group mt20">
+        <p class="label">계좌번호</p>
+        <input type="text" class="input-type-border text mt10" />
+      </div>
+
+      <div class="button-flex mt50">
+        <button class="bottom-button blue">일치 여부 확인하기</button>
+      </div>
+    </div>
+  </dialog>
 </html>

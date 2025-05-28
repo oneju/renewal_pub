@@ -170,9 +170,12 @@
   }
 }
 #InformCheck {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  &[open] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .content {
     height: fit-content;
     bottom: 20px;

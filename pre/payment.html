@@ -75,7 +75,7 @@
             </p>
             <div class="card_content">
               <div
-                class="available-coupon"
+                class="available-coupon click"
                 onclick="window.location='coupon.html'"
               >
                 사용 가능한 쿠폰 1장
@@ -103,14 +103,19 @@
             </div>
           </li>
           <div class="page-bottom">
-            <button class="bottom-button blue">14,900원 결제</button>
+            <button
+              class="bottom-button blue"
+              onclick="window.location='payment-select.html'"
+            >
+              14,900원 결제
+            </button>
           </div>
         </ul>
       </main>
     </div>
     <dialog id="MaintainAlert">
       <div class="content">
-        <p class="main-comment">정부 시스템 점검</p>
+        <h3 class="main-comment">정부 시스템 점검</h3>
         <p class="detail-comment mt30">
           현재 정부 시스템 점검으로 인해 상세 분석이 지연되고 있습니다
         </p>

@@ -1,26 +1,21 @@
 @font-face {
   font-family: "sr";
-  src: url("../assets/font/SpoqaHanSansNeo-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/SpoqaHanSansNeo-Regular.ttf") format("ttf");
   font-style: normal;
 }
 @font-face {
   font-family: "sm";
-  src: url("../assets/font/SpoqaHanSansNeo-Medium.woff2") format("woff2");
+  src: url("../assets/fonts/SpoqaHanSansNeo-Medium.ttf") format("ttf");
   font-style: normal;
 }
 @font-face {
   font-family: "sb";
-  src: url("../assets/font/SpoqaHanSansNeo-Bold.woff2") format("woff2");
+  src: url("../assets/fonts/SpoqaHanSansNeo-Bold.ttf") format("ttf");
   font-style: normal;
 }
 @font-face {
   font-family: "sl";
-  src: url("../assets/font/SpoqaHanSansNeo-Light.woff2") format("woff2");
-  font-style: normal;
-}
-@font-face {
-  font-family: "st";
-  src: url("../assets/font/SpoqaHanSansNeo-Thin.woff2") format("woff2");
+  src: url("../assets/fonts/SpoqaHanSansNeo-Light.ttf") format("ttf");
   font-style: normal;
 }
 
@@ -68,6 +63,9 @@ body {
 }
 .font-green {
   color: #00b894;
+}
+.font-black {
+  color: #18171a;
 }
 .text-underline {
   text-decoration: underline;
@@ -270,7 +268,7 @@ input {
     .none {
       display: flex;
       align-items: center;
-      color: #8894a0;
+      color: #999;
       img {
         width: 14px;
         height: 14px;

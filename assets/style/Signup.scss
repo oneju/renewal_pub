@@ -10,6 +10,7 @@
     }
     .page-title--sub {
       color: #8894a0;
+      font-family: "sr";
       font-size: 15px;
     }
     .page-content {
@@ -43,10 +44,12 @@
           background-color: #f5f6fa;
         }
         p {
+          font-family: "sr";
           font-size: 20px;
         }
         small {
           color: #8894a0;
+          font-family: "sr";
           font-size: 15px;
         }
         &:before {

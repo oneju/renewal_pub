@@ -7,12 +7,19 @@
       font-size: 24px;
       line-height: 36px;
     }
+    .page-title__sub {
+      color: #8894a0;
+      font-family: "sr";
+      font-size: 16px;
+      line-height: 27px;
+    }
     .loading-process {
       display: flex;
       flex-direction: column;
       gap: 30px;
       li {
         p {
+          font-family: "sr";
           font-size: 20px;
           color: #4e5968;
           opacity: 60%;

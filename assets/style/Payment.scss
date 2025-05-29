@@ -36,6 +36,7 @@
           background: url("/assets/image/coupon-img.svg") no-repeat #f5f6fa;
           background-position: right 15px center;
           border-radius: 10px;
+          font-family: "sr";
           font-size: 16px;
           padding: 15px;
         }
@@ -123,7 +124,7 @@
     .detail-comment {
       font-family: "sr";
       font-size: 15px;
-      line-height: 23px;
+      line-height: 24px;
       color: #8894a0;
     }
     .button-flex {
@@ -131,6 +132,7 @@
       display: flex;
       gap: 14px;
       button {
+        font-family: "sr";
         font-size: 18px;
       }
     }

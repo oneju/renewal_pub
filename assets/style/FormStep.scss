@@ -10,7 +10,8 @@
     }
     .page-title__sub {
       color: #8894a0;
-      font-size: 15px;
+      font-family: "sr";
+      font-size: 16px;
     }
     .radio-select-list {
       li {
@@ -26,6 +27,7 @@
         position: absolute;
         right: 0;
         top: 19px;
+        font-family: "sr";
         font-size: 18px;
         color: #bbb;
       }
@@ -46,6 +48,7 @@
     .bottom-button {
       height: 60px;
       width: 100%;
+      font-family: "sr";
       font-size: 18px;
     }
   }

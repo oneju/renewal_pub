@@ -11,6 +11,7 @@
     }
     .sub-title {
       color: #4e5968;
+      font-family: "sr";
       font-size: 17px;
       line-height: 27px;
     }
@@ -97,6 +98,7 @@
         }
       }
       p {
+        font-family: "sr";
         font-size: 12px;
         color: #8597ab;
         &.on {
@@ -122,6 +124,7 @@
     align-items: center;
     padding: 30px 20px 20px;
     .main-comment {
+      font-family: "sr";
       font-size: 24px;
       line-height: 36px;
       span {
@@ -129,10 +132,12 @@
       }
     }
     .sub-comment {
+      font-family: "sr";
       font-size: 16px;
       color: #4e5968;
     }
     .extra-comment {
+      font-family: "sr";
       font-size: 14px;
       color: #fff;
     }
@@ -143,6 +148,43 @@
       height: 60px;
       font-family: "sm";
       font-size: 18px;
+    }
+  }
+}
+#ContextMenu {
+  padding: 20px;
+  .content {
+    height: fit-content;
+    position: absolute;
+    right: 50px;
+    background: #f6f8fa;
+    border-radius: 10px;
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    .button-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li {
+        button {
+          width: 100%;
+          border-radius: 5px;
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          background-color: #fff;
+          font-family: "sm";
+          font-size: 14px;
+          img {
+            width: 14px;
+            height: auto;
+          }
+        }
+      }
     }
   }
 }

@@ -198,6 +198,7 @@ input {
     list-style: url("/assets/icons/check-gray.svg") inside;
     color: #bbb;
     font-size: 14px;
+    font-family: "sr";
     &.on {
       list-style: url("/assets/icons/check-blue.svg") inside;
       color: #1142bf;
@@ -246,11 +247,13 @@ input {
 
 .grid-list {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   row-gap: 20px;
   dl {
+    font-family: "sr";
     font-size: 15px;
     color: #4e5968;
+    white-space: nowrap;
     small {
       color: #8894a0;
       font-size: 12px;
@@ -295,7 +298,11 @@ input {
 
 .alert-list {
   li {
-    list-style: url("/assets/icons/alert-gray.svg");
+    background: url("/assets/icons/alert-gray.svg") no-repeat;
+    background-position: left top 3px;
+    padding-left: 22px;
+
+    font-family: "sr";
     font-size: 14px;
     line-height: 21px;
     color: #8894a0;
@@ -304,6 +311,7 @@ input {
 }
 
 .location-info {
+  font-family: "sr";
   font-size: 16px;
   border-radius: 10px;
   position: relative;

@@ -15,7 +15,7 @@
     .alert-list {
       border-top: 1px dashed #ededed;
       padding-top: 20px;
-      padding-left: 29px;
+      // padding-left: 29px;
     }
   }
   .content {
@@ -58,8 +58,9 @@
       font-family: "sm";
     }
     .content__title-sub {
-      font-size: 15px;
-      line-height: 22px;
+      font-family: "sr";
+      font-size: 16px;
+      line-height: 26px;
       color: #8894a0;
     }
     .content__nav {
@@ -109,7 +110,7 @@
       border-top: 1px solid #ededed;
     }
     .alert-list {
-      padding-left: 29px;
+      // padding-left: 29px;
     }
     .bottom-button {
       height: 60px;
@@ -131,6 +132,7 @@
     .dot-list {
       li {
         color: #18171a;
+        font-family: "sr";
         font-size: 14px;
         position: relative;
         padding-left: 12px;
@@ -188,6 +190,7 @@
         flex-direction: column;
         justify-content: space-around;
         color: #a9a9a9;
+        font-family: "sr";
         font-size: 12px;
       }
       .row {
@@ -197,6 +200,7 @@
         width: calc(100% - 50px);
         justify-content: space-around;
         color: #a9a9a9;
+        font-family: "sr";
         font-size: 12px;
       }
     }
@@ -216,6 +220,7 @@
         border-top: 1px solid #ededed;
         padding-top: 30px;
         p {
+          font-family: "sr";
           font-size: 14px;
           line-height: 22px;
         }
@@ -233,6 +238,7 @@
   .detail-comment {
     color: #6b7684;
     &.small {
+      font-family: "sr";
       font-size: 14px;
       line-height: 23px;
     }
@@ -251,24 +257,26 @@
     margin-left: -20px;
     padding-left: 20px;
     li {
-      display: flex;
       width: 100%;
+      position: relative;
       .number {
         color: #4e5968;
         background-color: #f2f4f6;
         border-radius: 3px;
         width: 18px;
         height: 18px;
+        font-family: "sr";
         font-size: 12px;
         text-align: center;
+        position: absolute;
       }
       .num__content {
-        width: 100%;
-        padding-left: 15px;
+        margin-left: 33px;
       }
     }
   }
   .guide-content {
+    padding-bottom: 0;
     .num-list {
       background-color: #f6f8fa;
       padding-top: 30px;
@@ -276,7 +284,7 @@
       li {
         .number {
           background-color: #d9dade;
-          margin-top: 35px;
+          top: 15px;
         }
       }
     }
@@ -326,6 +334,11 @@
       transform: scaleY(1);
     }
   }
+  .content__detail {
+    &.border {
+      border-top: 1px solid #ededed;
+    }
+  }
 }
 .toggle-content--border {
   margin: 20px;
@@ -344,7 +357,7 @@
   }
   .alert-list {
     padding-top: 20px;
-    padding-left: 29px;
+    // padding-left: 29px;
     &.border {
       border-top: 1px dashed #ededed;
     }
@@ -377,6 +390,7 @@
       display: flex;
       gap: 14px;
       button {
+        font-family: "sr";
         font-size: 18px;
       }
     }
@@ -408,12 +422,14 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 10px;
   td,
   th {
     border: 1px solid rgba(0, 27, 55, 0.1);
     text-align: center;
+    font-family: "sr";
     font-size: 14px;
-    padding: 12px 10px;
+    padding: 12px 0px;
     &:first-child {
       border-left: none;
       max-width: 50%;
@@ -422,11 +438,15 @@ table {
       border-right: none;
     }
     &.sm {
+      font-family: "sr";
       font-size: 13px;
       line-height: 19px;
     }
     small {
       color: #4e5968;
+      font-family: "sr";
+      font-size: 12px;
+      line-height: 17px;
       &.gray {
         color: #999;
       }
@@ -438,8 +458,16 @@ table {
     &.np {
       padding: 0;
     }
+    &.fp {
+      padding: 12px 10px;
+    }
     &.slim {
       padding: 5px 0;
+    }
+    p.gray {
+      color: #8894a0;
+      font-size: 12px;
+      line-height: 17.6px;
     }
   }
   th {
@@ -453,9 +481,14 @@ table {
       background-color: #eaf0ff;
     }
   }
-
+  td {
+    .alert-list {
+      padding: 0 15px;
+    }
+  }
   caption {
     color: #8894a0;
+    font-family: "sr";
     font-size: 12px;
     margin-bottom: 16px;
     text-align: right;

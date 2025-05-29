@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="/style/MyPage.css" />
+  </head>
+  <body class="App">
+    <div id="MyPage" class="Page">
+      <header class="util-header">
+        <h1 class="header-title">마이페이지</h1>
+        <div class="right-side">
+          <!-- <img src="/assets/icons/bell-gray-alert.svg" class="click" /> -->
+          <img src="/assets/icons/bell-gray.svg" class="click" />
+        </div>
+      </header>
+      <main class="content">
+        <div class="content-tab-section">
+          <ul class="content__tabs">
+            <li>
+              <input type="radio" name="tab" id="1" checked />
+              <label for="1">우리 집 관리</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="tab"
+                id="2"
+                onclick="window.location='my-page-history.html'"
+              />
+              <label for="2">이용내역</label>
+            </li>
+          </ul>
+        </div>
+        <div class="home-info">
+          <ul class="info-list">
+            <li class="block">
+              <div class="flex-row">
+                <img src="/assets/icons/safehomes-basic-symbol.svg" alt="" />
+                <img
+                  src="/assets/image/three-dots-gray.svg"
+                  alt=""
+                  class="click"
+                />
+              </div>
+              <div class="location-info mt20">
+                서울특별시 관악구 장군봉5길 30-12
+              </div>
+              <details class="toggle-content toggle-content--small mt30" open>
+                <summary>
+                  <div class="flex">
+                    기본 정보
+                    <div class="border"></div>
+                  </div>
+                </summary>
+                <div class="content__detail mt30">
+                  <div class="grid-list">
+                    <dl>계약기간</dl>
+                    <!-- <dd class="text-underline font-blue click">입력</dd> -->
+                    <dd>
+                      <div class="flex-row">
+                        24.05.26 - 26.05.26
+                        <img
+                          src="/assets/image/pen_edit_gray.svg"
+                          alt=""
+                          width="14"
+                        />
+                      </div>
+                    </dd>
+                    <dl>보증보험</dl>
+                    <dd>
+                      <!-- <dd class="text-underline font-blue click">입력</dd> -->
+                      <div class="flex-row">
+                        미가입
+                        <img
+                          src="/assets/image/pen_edit_gray.svg"
+                          alt=""
+                          width="14"
+                        />
+                      </div>
+                    </dd>
+                    <dl>보증금</dl>
+                    <dd class="">1억 1천만원</dd>
+                    <dl>선순위 보증금</dl>
+                    <dd>
+                      <p class="none">미입력</p>
+                    </dd>
+                    <dl>국세·지방세 완납증명서</dl>
+                    <dd>
+                      <p class="none">미입력</p>
+                    </dd>
+                  </div>
+                </div>
+              </details>
+              <details class="toggle-content toggle-content--small mt30" open>
+                <summary class="small">
+                  <div class="flex">
+                    최종 분석 결과
+                    <div class="border"></div>
+                  </div>
+                </summary>
+                <div class="content__detail mt20">
+                  <div class="grid-list">
+                    <dl>계약 시점 (24.05.26)</dl>
+                    <dd class="text-bold font-yellow">확인 필요</dd>
+                  </div>
+                </div>
+              </details>
+              <div class="flex-row g-15">
+                <button class="bottom-button h-60 light-blue mt50">
+                  계약 시점 분석
+                </button>
+                <button class="bottom-button h-60 black mt50">
+                  분석 결과 확인
+                </button>
+              </div>
+              <!-- <button class="bottom-button h-60 black mt50">무료 진단 확인</button> -->
+              <ul class="dot-list gray mt30">
+                <li>
+                  현재 시점과 별개로,
+                  <span class="font-black">계약 시점을 기준으로도 분석</span
+                  >해야 보증금을 정확하게 지킬 수 있습니다
+                </li>
+              </ul>
+            </li>
+            <li class="block">
+              <div class="flex-row block-title">
+                등기부등본 감지
+                <!-- <span class="font-yellow flex-row">
+                  <img
+                    src="/assets/icons/check-circle-yellow.svg"
+                    alt=""
+                    width="16"
+                  />
+                  확인 필요</span
+                > -->
+                <!-- <span class="font-red flex-row">
+                  <img
+                    src="/assets/icons/check-circle-red.svg"
+                    alt=""
+                    width="16"
+                  />
+                  변동 있음</span
+                > -->
+                <span class="font-green flex-row">
+                  <img
+                    src="/assets/icons/check-circle-green.svg"
+                    alt=""
+                    width="16"
+                  />
+                  변동 없음</span
+                >
+                <!-- <span class="text-underline font-blue">계약기간 입력</span> -->
+              </div>
+              <div class="block-content mt15">
+                <div class="grid-list mt20">
+                  <dl>감지 시작</dl>
+                  <dd>25.05.10</dd>
+                  <dl>마지막 감지</dl>
+                  <dd>25.05.28</dd>
+                </div>
+                <!-- <details class="toggle-content toggle-content--small mt30" open>
+                  <summary class="small">
+                    <div class="flex">
+                      감지 내역
+                      <div class="border"></div>
+                    </div>
+                  </summary>
+                  <div class="content__detail mt20">
+                    <div class="grid-list">
+                      <dl>25.05.28</dl>
+                      <dd class="text-bold font-blue">처리 완료</dd>
+                      <dd class="text-bold font-red">처리중</dd>
+                    </div>
+                  </div>
+                </details> -->
+                <!-- <button class="bottom-button h-50 light-blue mt50">
+                  등기부등본 업데이트
+                </button> -->
+                <!-- <ul class="dot-list gray mt30">
+                  <li>
+                    현재
+                    <span class="font-black">등기신청사건이 처리 중</span>이며,
+                    곧 등기기록에 변경이 반영될 예정입니다
+                  </li>
+                </ul> -->
+
+                <ul class="alert-list border mt20">
+                  <li>등기부등본에 변동이 생기면 즉시 알려드립니다</li>
+                </ul>
+              </div>
+              <!-- <ul class="alert-list mt30">
+                  <li>계약기간을 입력하면 변동 감지가 시작됩니다</li>
+                </ul> -->
+            </li>
+            <li class="">
+              <details class="toggle-content toggle-content--border" open>
+                <summary>퇴거 전, 보증금 지키는 준비</summary>
+                <div class="content__detail border mt15">
+                  <div class="flex-row content__detail-main mt30">
+                    계약 종료까지 364일 남았습니다
+                  </div>
+                  <!-- <div class="flex-row content__detail-main mt30">
+                    계약 기간을 입력해 주세요
+                    <span class="text-underline font-blue click">입력하기</span>
+                  </div> -->
+                  <p class="detail-comment gray_1 mt15">
+                    보증금 회수를 위해 지금부터 준비해야 할 법적 조치들입니다.
+                    아래 순서를 따라가면,
+                    <i class="text-bold font-blue">사고 발생 시 빠르게 대응</i
+                    >할 수 있습니다
+                  </p>
+                  <!-- <p class="detail-comment gray_1 mt15">
+                    계약기간을 입력하면, 종료일에 맞춰 필요한 법적 대응을 안내해
+                    드립니다
+                  </p> -->
+                  <ul class="num-list mt30">
+                    <li>
+                      <div class="number">1</div>
+                      <details
+                        class="toggle-content toggle-content--small num__content"
+                        open
+                      >
+                        <summary>
+                          <div class="flex">
+                            계약 종료 의사 전달
+                            <div class="border"></div>
+                          </div>
+                        </summary>
+                        <div class="content__detail mt15">
+                          <p class="detail-comment gray_2 mt20">
+                            퇴거 전 최소 2~6개월 전, 문자·카톡·녹취 등<br />‘기록이
+                            남는 방식’으로 임대인에게 보증금 반환 가능 여부를
+                            확인하세요
+                          </p>
+                          <p class="detail-comment font-red mt20">
+                            ※ 구두 통보는 효력이 없습니다
+                          </p>
+                          <div class="button-flex mt40">
+                            <button class="bottom-button light-blue">
+                              종료 의사 예시 문구
+                            </button>
+                          </div>
+                        </div>
+                      </details>
+                    </li>
+                    <li>
+                      <div class="number">2</div>
+                      <details
+                        class="toggle-content toggle-content--small num__content"
+                        open
+                      >
+                        <summary>
+                          <div class="flex">
+                            계약 해지 내용증명
+                            <div class="border"></div>
+                          </div>
+                        </summary>
+                        <div class="content__detail mt15">
+                          <p class="detail-comment gray_2 mt20">
+                            보증금 반환을 거부하거나 연락이 되지 않는
+                            임대인에게는, 계약 종료 2개월 전까지 내용증명으로
+                            계약 해지 의사를 반드시 통보해야 합니다
+                          </p>
+                          <div class="button-flex mt40">
+                            <button class="bottom-button light-blue">
+                              내용증명 자세히 보기
+                            </button>
+                          </div>
+                        </div>
+                      </details>
+                    </li>
+                    <li>
+                      <div class="number">3</div>
+                      <details
+                        class="toggle-content toggle-content--small num__content"
+                        open
+                      >
+                        <summary>
+                          <div class="flex">
+                            계약해지 공시송달
+                            <div class="border"></div>
+                          </div>
+                        </summary>
+                        <div class="content__detail mt15">
+                          <p class="detail-comment gray_2 mt20">
+                            내용증명이 반송되거나 수취 거부되고, 임대인과의
+                            연락이 완전히 끊긴 경우에는 ‘공시송달’ 절차로
+                            진행해야 합니다.
+                          </p>
+                          <p class="detail-comment gray_2 mt15">
+                            공시송달은 평균 1~2개월이 소요되므로,<br />계약 종료
+                            4개월 전까지 반드시 신청을 완료해야 안전하게 대응할
+                            수 있습니다
+                          </p>
+                          <div class="button-flex mt40">
+                            <button class="bottom-button light-blue">
+                              공시송달 자세히 보기
+                            </button>
+                          </div>
+                        </div>
+                      </details>
+                    </li>
+                    <li>
+                      <div class="number">4</div>
+                      <details
+                        class="toggle-content toggle-content--small num__content"
+                        open
+                      >
+                        <summary>
+                          <div class="flex">
+                            임차권등기명령
+                            <div class="border"></div>
+                          </div>
+                        </summary>
+                        <div class="content__detail mt15">
+                          <p class="detail-comment gray_2 mt20">
+                            보증금을 받지 못한 상태로 퇴거해야 한다면,<br />계약
+                            종료 직후 '임차권 등기명령'을 반드시 신청해야 합니다
+                          </p>
+                          <p class="detail-comment gray_2 mt15">
+                            임차권 등기를 통해 대항력을 유지할 수 있으며,<br />이후
+                            보증보험 청구나 경매 배당 요구 등 법적 절차가
+                            가능합니다
+                          </p>
+                          <div class="button-flex mt40">
+                            <button class="bottom-button light-blue">
+                              임차권등기 자세히 보기
+                            </button>
+                          </div>
+                        </div>
+                      </details>
+                    </li>
+                    <li>
+                      <div class="number">5</div>
+                      <details
+                        class="toggle-content toggle-content--small num__content"
+                        open
+                      >
+                        <summary>
+                          <div class="flex">
+                            변호사 법률 상담
+                            <div class="border"></div>
+                          </div>
+                        </summary>
+                        <div class="content__detail mt15">
+                          <p class="detail-comment gray_2 mt20">
+                            현재 상황을 기반으로 변호사가 신속하고 정확한 대응
+                            방법을 제시합니다
+                          </p>
+                          <div class="button-flex mt40">
+                            <button class="bottom-button light-blue">
+                              변호사 법률 상담 자세히 보기
+                            </button>
+                          </div>
+                        </div>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="home-info none">
+          <h3 class="content__title">등록된 우리집이 없습니다</h3>
+          <p class="content__title-sub mt15">
+            아래 조회내역에서 '우리집'으로 등록해보세요
+          </p>
+          <ul class="history-list mt30">
+            <li>
+              <p>봉천동 1529-17</p>
+              <p class="mt10">
+                <small class="gray"
+                  >서울특별시 관악구 장군봉5길 30-12 루시</small
+                >
+              </p>
+            </li>
+            <li>
+              <p>봉천동 1529-17</p>
+              <p class="mt10">
+                <small class="font-blue">모든 위험 상세 분석 완료</small>
+              </p>
+            </li>
+          </ul>
+        </div> -->
+      </main>
+      <ul class="nav-bar">
+        <li class="click">
+          <div class="img">
+            <img src="/assets/icons/location-icon-grayish.svg" />
+          </div>
+          <p>집 진단하기</p>
+        </li>
+        <li class="click">
+          <div class="img">
+            <img src="/assets/icons/person-icon-blue.svg" />
+          </div>
+          <p class="on">우리 집</p>
+        </li>
+        <li class="click">
+          <div class="img">
+            <img src="/assets/icons/etc-icon-grayish.svg" />
+          </div>
+          <p>전체</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <dialog id="ConfirmNotice">
+    <div class="content">
+      <h3 class="main-comment">
+        [봉천동 1529-17] 를 우리 집으로<br />등록하시겠어요?
+      </h3>
+      <div class="button-flex mt50">
+        <button class="bottom-button gray">취소</button>
+        <button class="bottom-button blue">등록</button>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="ConfirmNotice">
+    <div class="content">
+      <h3 class="main-comment">변경 사항 미반영 등기부등본</h3>
+      <h3 class="detail-comment mt30">
+        현재 발급하려는 등기부등본은 아직 신청된 변경 내용이 반영되지 않은
+        상태입니다. 변경이 완료되면 알림톡으로 안내해드립니다
+      </h3>
+      <div class="button-flex mt50">
+        <button class="bottom-button gray">취소</button>
+        <button class="bottom-button blue">등록</button>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="ConfirmNotice">
+    <div class="content">
+      <h3 class="main-comment">우리집을 삭제하시겠습니까?</h3>
+      <h3 class="detail-comment mt30">
+        삭제 시 등록 후 변경된 정보는 저장되지 않으며, 삭제 후 복구가
+        불가능합니다.
+      </h3>
+      <div class="button-flex mt50">
+        <button class="bottom-button gray">취소</button>
+        <button class="bottom-button black">삭제하기</button>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="ConfirmNotice">
+    <div class="content">
+      <h3 class="main-comment">보증보험 가입 여부</h3>
+      <ul class="mt30">
+        <li>
+          <input
+            type="radio"
+            class="radio-type"
+            name="confirm_1"
+            id="11"
+            checked
+          />
+          <label for="11">가입했습니다</label>
+        </li>
+        <li class="mt25">
+          <input type="radio" class="radio-type" name="confirm_1" id="12" />
+          <label for="12">가입하지 않았습니다</label>
+        </li>
+      </ul>
+      <div class="button-flex mt50">
+        <button class="bottom-button gray">취소</button>
+        <button class="bottom-button blue">변경</button>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="SelectContractDue">
+    <div class="content">
+      <div class="calendar">
+        <div class="calendar--header flex-row">
+          <img
+            src="/assets/icons/arrow-simple-right.svg"
+            alt=""
+            class="left"
+            width="10"
+          />
+          <div class="calendar--header__title">
+            <p>24년 5월</p>
+            <p><small>계약 시작</small></p>
+          </div>
+          <img
+            src="/assets/icons/arrow-simple-right.svg"
+            alt=""
+            class="right"
+            width="10"
+          />
+        </div>
+        <div class="calendar--body">
+          <div class="grid_week days">
+            <p>일</p>
+            <p>월</p>
+            <p>화</p>
+            <p>수</p>
+            <p>목</p>
+            <p>금</p>
+            <p>토</p>
+          </div>
+          <div class="grid_week">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="grid_week">
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+          </div>
+          <div class="grid_week">
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+          </div>
+          <div class="grid_week">
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+            <p>23</p>
+            <p>24</p>
+          </div>
+          <div class="grid_week">
+            <p>25</p>
+            <p class="picked">26</p>
+            <p>27</p>
+            <p>28</p>
+            <p>29</p>
+            <p>30</p>
+            <p>31</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-list mt40">
+        <dl class="font-blue">계약 시작일</dl>
+        <dd>2024.05.26</dd>
+        <dl>계약 종료일</dl>
+        <dd>2026.05.26</dd>
+      </div>
+      <div class="button-flex mt50">
+        <button class="bottom-button gray">취소</button>
+        <button class="bottom-button blue">확인</button>
+      </div>
+    </div>
+  </dialog>
+</html>

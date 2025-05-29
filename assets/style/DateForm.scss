@@ -1,0 +1,45 @@
+@import "common.css";
+#FormPage {
+  .content {
+    margin: 40px 20px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .input-label-group {
+      .label {
+        color: rgba(78, 89, 104, 0.7);
+        font-family: "sr";
+        font-size: 13px;
+      }
+      input[type="date"] {
+        appearance: none;
+        &:placeholder {
+          display: none;
+        }
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        background: url("/assets/icons/calendar-gray.svg");
+      }
+      .input-type-border {
+        display: block;
+        width: 100%;
+        background: url("/assets/icons/calendar-gray.svg") no-repeat #f2f4f6;
+        background-position: left 15px center;
+        border: 1px solid #edeff2;
+        border-radius: 10px;
+        padding: 15px 20px;
+        padding-left: 50px;
+        font-family: "sr";
+        font-size: 18px;
+        &.on {
+          background: url("/assets/icons/calendar-blue.svg") no-repeat #fff;
+          background-position: left 15px center;
+          border: 1px solid #18171a;
+          font-family: "sm";
+        }
+      }
+    }
+  }
+}

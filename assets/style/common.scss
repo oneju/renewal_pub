@@ -73,6 +73,17 @@ body {
 .text-bold {
   font-family: "sm";
 }
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 .click {
   cursor: pointer;
 }
@@ -230,6 +241,10 @@ input {
     font-family: "sr";
     font-size: 18px;
   }
+  &.border-x {
+    background-color: transparent;
+    border: none;
+  }
 }
 .page-bottom {
   position: fixed;
@@ -317,7 +332,7 @@ input {
   position: relative;
   padding: 15px 10px;
   padding-left: 40px;
-  background: url("/assets/icons/location-icon-gray.svg") no-repeat;
+  background: url("/assets/icons/location-icon-grayish.svg") no-repeat;
   background-color: #f5f6fa;
   background-size: 13px;
   background-position: 15px center;

@@ -73,7 +73,7 @@
         background-color: #fff;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
         &.on {
-          background: url("/assets/icons/check-white.svg") no-repeat;
+          background: url("../assets/icons/check-white.svg") no-repeat;
           background-position: right 15px center;
           background-color: #18141a;
           color: #fff;
@@ -228,7 +228,7 @@
           color: #8894a0;
         }
         .recommend {
-          background: url("/assets/icons/arrow-slim-right-blue.svg") no-repeat;
+          background: url("../assets/icons/arrow-slim-right-blue.svg") no-repeat;
           background-position: left center;
           padding-left: 32px;
         }
@@ -303,7 +303,7 @@
     &::before {
       content: "";
       display: block;
-      background: url("/assets/icons/arrow-simple-top.svg") no-repeat;
+      background: url("../assets/icons/arrow-simple-top.svg") no-repeat;
       background-size: 20px;
       background-position: right center;
       top: 0;
@@ -328,7 +328,7 @@
     summary::before {
       content: "";
       display: block;
-      background: url("/assets/icons/arrow-simple-top.svg") no-repeat;
+      background: url("../assets/icons/arrow-simple-top.svg") no-repeat;
       background-size: 20px;
       background-position: right center;
       transform: scaleY(1);
@@ -397,7 +397,7 @@
     .file-type {
       &.camera {
         + label {
-          background: url("/assets/icons/camera-gray.svg") no-repeat;
+          background: url("../assets/icons/camera-gray.svg") no-repeat;
           background-position: left 15px center;
           background-color: #f5f6fa;
         }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="../style/Document.css" />
+  </head>
+  <body class="App">
+    <div id="DocumentPage" class="Page">
+      <header class="util-header">
+        <a href="my-page.html" class="back"></a>
+        <h1 class="header-title">문서함</h1>
+      </header>
+      <main class="content">
+        <ul class="content__tabs">
+          <li>
+            <input type="radio" name="tab" id="1" />
+            <label for="1">계약</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="2" />
+            <label for="2">보호</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="3" checked />
+            <label for="3">거주</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="4"
+              onclick="window.location='document-expiration.html'"
+            />
+            <label for="4">종료</label>
+          </li>
+        </ul>
+        <div class="tab-content mt50">
+          <h2 class="page-title">거주 중 관리 및 증빙 서류</h2>
+          <p class="page-title--sub mt15">
+            거주 중 발생한 문제나 임대인과의 소통을 기록하고 증빙하기 위한
+            서류입니다
+          </p>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="font-bold">필수</p>
+                <p>(<span class="">0</span>/1)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  계약 갱신 또는 변경 계약서
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="text-bold">권장</p>
+                <p>(<span class="">0</span>/2)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  월세 납입 증명서
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  하자보수 기록
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

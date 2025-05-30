@@ -1,0 +1,113 @@
+@import "common.css";
+#DocumentFormPage {
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .page-title--sub {
+      font-family: "sr";
+      font-size: 15px;
+      line-height: 25.6px;
+      color: #8894a0;
+    }
+    .input-group-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .input-label-group {
+      .label {
+        color: #4e5968;
+        font-family: "sr";
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+    }
+    input[type="file"] {
+      display: none;
+    }
+    .input-type-border {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 20px;
+      padding-left: 50px;
+      font-family: "sr";
+      font-size: 18px;
+      &.on {
+        border: 1px solid #18171a;
+        font-family: "sm";
+      }
+      &.file {
+        background: url("../assets/icons/open-folder-gray.svg") no-repeat
+          #f5f6fa;
+        background-position: left 15px center;
+        &.on {
+          background: url("../assets/icons/open-folder-blue.svg") no-repeat #fff;
+          background-position: left 15px center;
+        }
+      }
+    }
+    .dot-list {
+      border-top: 1px dashed #ededed;
+      padding-top: 30px;
+      li {
+        font-family: "sr";
+        font-size: 14px;
+        line-height: 22px;
+        color: #8894a0;
+
+        position: relative;
+        padding-left: 12px;
+        text-align: left;
+        &::before {
+          content: "·";
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    .flex-row {
+      align-items: center;
+    }
+  }
+}
+
+#ContextMenu {
+  .content {
+    position: absolute;
+    right: 20px;
+    background: #f6f8fa;
+    border-radius: 10px;
+    width: 244px;
+    padding: 5px;
+    .button-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li {
+        button {
+          width: 100%;
+          border-radius: 5px;
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          background-color: #fff;
+          font-family: "sr";
+          font-size: 14px;
+          img {
+            width: 14px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

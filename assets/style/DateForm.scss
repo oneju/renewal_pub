@@ -9,23 +9,21 @@
     }
     .input-label-group {
       .label {
-        color: rgba(78, 89, 104, 0.7);
+        color: #4e5968;
         font-family: "sr";
         font-size: 13px;
       }
       input[type="date"] {
-        appearance: none;
-        &:placeholder {
+        display: none;
+        &::-webkit-calendar-picker-indicator {
+          appearance: none;
           display: none;
         }
-      }
-      input[type="date"]::-webkit-calendar-picker-indicator {
-        background: url("/assets/icons/calendar-gray.svg");
       }
       .input-type-border {
         display: block;
         width: 100%;
-        background: url("/assets/icons/calendar-gray.svg") no-repeat #f2f4f6;
+        background: url("../assets/icons/calendar-gray.svg") no-repeat #f2f4f6;
         background-position: left 15px center;
         border: 1px solid #edeff2;
         border-radius: 10px;
@@ -34,11 +32,30 @@
         font-family: "sr";
         font-size: 18px;
         &.on {
-          background: url("/assets/icons/calendar-blue.svg") no-repeat #fff;
+          background: url("../assets/icons/calendar-blue.svg") no-repeat #fff;
           background-position: left 15px center;
           border: 1px solid #18171a;
           font-family: "sm";
         }
+      }
+    }
+  }
+  .page-bottom {
+    .page-bottom-message {
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        width: fit-content;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 15px;
+        font-family: "sr";
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
       }
     }
   }

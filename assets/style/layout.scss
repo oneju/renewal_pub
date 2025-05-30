@@ -30,6 +30,11 @@
         padding-bottom: 120px;
       }
     }
+    &:has(.page-bottom-message) {
+      .content {
+        padding-bottom: 150px;
+      }
+    }
   }
   &:has(dialog[open]) {
     overflow: hidden;

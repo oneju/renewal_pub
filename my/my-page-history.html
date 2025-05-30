@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="../style/MyPage.css" />
+  </head>
+  <body class="App">
+    <div id="MyPage" class="Page">
+      <header class="util-header">
+        <h1 class="header-title">마이페이지</h1>
+        <div class="right-side">
+          <!-- <img src="../assets/icons/bell-gray-alert.svg" class="click" /> -->
+          <img src="../assets/icons/bell-gray.svg" class="click" />
+        </div>
+      </header>
+      <main class="content">
+        <div class="content-tab-section">
+          <ul class="content__tabs">
+            <li>
+              <input
+                type="radio"
+                name="tab"
+                id="1"
+                onclick="window.location='my-page.html'"
+              />
+              <label for="1">우리 집 관리</label>
+            </li>
+            <li>
+              <input type="radio" name="tab" id="2" checked />
+              <label for="2">이용내역</label>
+            </li>
+          </ul>
+        </div>
+        <div class="home-info">
+          <h3 class="content__title">
+            이용내역 <span class="font-blue">15건</span>
+          </h3>
+          <ul class="content__nav mt50">
+            <li class="on">안심 진단 리포트</li>
+          </ul>
+          <ul class="history-list bg-none mt30">
+            <li>
+              <p>봉천동 1529-17</p>
+              <p class="mt10">
+                <small class="gray">2025.05.25 05:35</small>
+              </p>
+            </li>
+            <li>
+              <p>봉천동 1529-17</p>
+              <p class="mt10">
+                <small class="gray">2025.05.25 05:35</small>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <ul class="nav-bar">
+        <li class="click">
+          <div class="img">
+            <img src="../assets/icons/location-icon-grayish.svg" />
+          </div>
+          <p>집 진단하기</p>
+        </li>
+        <li class="click">
+          <div class="img">
+            <img src="../assets/icons/person-icon-blue.svg" />
+          </div>
+          <p class="on">우리 집</p>
+        </li>
+        <li class="click">
+          <div class="img">
+            <img src="../assets/icons/etc-icon-grayish.svg" />
+          </div>
+          <p>전체</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import "common.css";
+#DocumentIntroPage {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+    }
+    .page-title--sub {
+      font-family: "sr";
+      font-size: 16px;
+      color: #8894a0;
+      text-align: center;
+    }
+    .main-image-group {
+      position: relative;
+      .pointer {
+        position: absolute;
+        top: 55px;
+        left: -8px;
+      }
+    }
+  }
+}

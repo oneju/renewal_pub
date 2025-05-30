@@ -34,12 +34,12 @@
         padding-top: 80px;
         border: 1px solid #f5f6fa;
         &.per_1 {
-          background: url("/assets/image/person_1.svg") no-repeat;
+          background: url("../assets/image/person_1.svg") no-repeat;
           background-position: bottom 100px center;
           background-color: #f5f6fa;
         }
         &.per_2 {
-          background: url("/assets/image/person_2.svg") no-repeat;
+          background: url("../assets/image/person_2.svg") no-repeat;
           background-position: bottom 100px center;
           background-color: #f5f6fa;
         }
@@ -71,7 +71,7 @@
           background-color: #fff;
 
           &.per_1 {
-            background: url("/assets/image/person_1_blue.svg") no-repeat;
+            background: url("../assets/image/person_1_blue.svg") no-repeat;
             background-position: bottom 100px center;
             background-color: #fff;
           }
@@ -82,7 +82,7 @@
             width: 20px;
             height: 20px;
             // border: 1px solid #ededed;
-            background: url("/assets/icons/check-white.svg") no-repeat;
+            background: url("../assets/icons/check-white.svg") no-repeat;
             background-position: center;
             background-color: #1042bf;
             border-radius: 5px;
@@ -111,7 +111,7 @@
       font-size: 18px;
     }
     &.link {
-      background: url("/assets/icons/arrow-simple-right.svg") no-repeat;
+      background: url("../assets/icons/arrow-simple-right.svg") no-repeat;
       background-position: right 15px center;
       &:before {
         width: 16px;
@@ -134,7 +134,7 @@
     + label {
       background-color: #fff;
       &:before {
-        background: url("/assets/icons/check-white.svg") no-repeat #1042bf;
+        background: url("../assets/icons/check-white.svg") no-repeat #1042bf;
         background-size: 6px;
         border: 1px solid transparent;
         background-position: center;
@@ -143,7 +143,7 @@
         border: 1px solid #18171a;
 
         &:before {
-          background: url("/assets/icons/check-white.svg") no-repeat #1042bf;
+          background: url("../assets/icons/check-white.svg") no-repeat #1042bf;
           border: 1px solid transparent;
           background-position: center;
         }

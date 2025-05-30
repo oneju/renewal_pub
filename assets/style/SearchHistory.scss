@@ -18,11 +18,13 @@
         background-color: #fff;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
         &.on {
-          background: url("/assets/icons/check-white.svg") no-repeat;
+          background: url("../assets/icons/check-white.svg") no-repeat;
           background-position: right 15px center;
           background-color: #18141a;
           color: #fff;
           padding-right: 37px;
+          font-family: "sm";
+          font-size: 15px;
         }
       }
     }
@@ -35,7 +37,7 @@
         box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.04);
 
         padding: 20px;
-        background: url("/assets/icons/arrow-simple-right.svg") no-repeat #fff;
+        background: url("../assets/icons/arrow-simple-right.svg") no-repeat #fff;
         background-position: right 20px center;
         p {
           font-family: "sm";

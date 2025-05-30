@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="../style/Document.css" />
+  </head>
+  <body class="App">
+    <div id="DocumentPage" class="Page">
+      <header class="util-header">
+        <a href="my-page.html" class="back"></a>
+        <h1 class="header-title">문서함</h1>
+      </header>
+      <main class="content">
+        <ul class="content__tabs">
+          <li>
+            <input type="radio" name="tab" id="1" checked />
+            <label for="1">계약</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="2"
+              onclick="window.location='document-protect.html'"
+            />
+            <label for="2">보호</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="3"
+              onclick="window.location='document-contract.html'"
+            />
+            <label for="3">거주</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="4"
+              onclick="window.location='document-contract.html'"
+            />
+            <label for="4">종료</label>
+          </li>
+        </ul>
+        <div class="tab-content mt50">
+          <h2 class="page-title">계약 관련 서류</h2>
+          <p class="page-title--sub mt15">
+            계약의 기본이 되는 매우 중요한 서류들입니다
+          </p>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="font-bold">필수</p>
+                <p>(<span class="font-blue">1</span>/6)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  임대차 계약서
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  중개대상물 확인·설명서
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  계약금(잔금) 이체 확인증·영수증
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  임대인 국세·지방세 완납증명서
+                  <span class="text-bold font-blue">관리</span>
+                </li>
+                <li class="click">
+                  대리인과 계약 시
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  신탁 부동산 계약 시
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="text-bold">권장</p>
+                <p>(<span class="">0</span>/3)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  공제증서 사본
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  중개보수 영수증
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  법인·사업자 임대인 계약 시
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="text-bold">선택</p>
+                <p>(<span class="">0</span>/1)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  임대인 신분증 사본
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="../style/DocumentForm.css" />
+  </head>
+  <body class="App">
+    <div id="DocumentFormPage" class="Page">
+      <header class="util-header">
+        <a href="my-page.html" class="back"></a>
+        <h1 class="header-title">문서함</h1>
+      </header>
+      <main class="content">
+        <h2 class="page-title mt40">임대차 계약서</h2>
+        <input type="file" id="file01" />
+        <div class="flex-row mt50">
+          <label class="input-type-border file on" for="file01"
+            >25.05.22 임대차 계약서</label
+          >
+          <img src="../assets/image/three-dots-gray.svg" alt="" />
+        </div>
+        <!-- <label class="input-type-border file mt50" for="file01"
+          >서류 첨부</label
+        > -->
+        <!-- <ul class="dot-list mt30">
+          <li class="">
+            보증금액, 계약 기간 등 계약의 모든 조건이 명시된 가장 중요한
+            서류입니다. 확정일자를 받은 계약서는 보증금 우선변제권의 근거가
+            됩니다
+          </li>
+        </ul> -->
+      </main>
+    </div>
+    <div class="page-bottom">
+      <button class="bottom-button blue">저장</button>
+    </div>
+  </body>
+  <dialog id="ContextMenu" open>
+    <div class="content" style="top: 240px">
+      <ul class="button-list">
+        <li>
+          <button>
+            다른 서류 등록
+            <img src="../assets/icons/open-folder-gray.svg" />
+          </button>
+        </li>
+        <li>
+          <button>
+            공유하기
+            <img src="../assets/icons/share-gray.svg" />
+          </button>
+        </li>
+        <li>
+          <button>
+            삭제하기
+            <img src="../assets/icons/delete-circle-gray.svg" />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+</html>

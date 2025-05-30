@@ -17,7 +17,7 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <title>SAFEHOMES</title>
-    <link rel="stylesheet" href="/style/DateForm.css" />
+    <link rel="stylesheet" href="../style/DateForm.css" />
   </head>
   <body class="App">
     <div id="FormPage" class="Page">
@@ -31,14 +31,45 @@
         </h2>
         <div class="input-label-group mt50">
           <p class="label">임대차 계약 신고일 또는 확정일자</p>
+          <input type="date" id="date01" placeholder="날짜 입력" />
           <input
-            type="date"
+            type="text"
             class="input-type-border mt15 on"
             id="date01"
+            placeholder="날짜 입력"
+            value="2024-05-26"
+          />
+        </div>
+        <div class="input-label-group mt30">
+          <p class="label">전입신고일</p>
+          <input type="date" id="date02" placeholder="날짜 입력" />
+          <input
+            type="text"
+            class="input-type-border mt15"
+            id="date02"
             placeholder="날짜 입력"
           />
         </div>
       </main>
+      <div class="page-bottom">
+        <ul class="page-bottom-message">
+          <!-- <li>
+            <p>
+              <span class="text-bold font-blue"
+                >정확한 계약 시점 분석과 우선변제순위 판단을 위해,</span
+              >전입신고일은 반드시 입력해야 합니다
+            </p>
+          </li> -->
+          <li>
+            <p>
+              <span class="text-bold font-blue"
+                >정확한 계약 시점 분석과 우선변제순위 판단을 위해,</span
+              >임대차 계약 신고일은 반드시 입력해야 합니다
+            </p>
+          </li>
+        </ul>
+        <button class="bottom-button gray">다음</button>
+      </div>
     </div>
   </body>
 </html>

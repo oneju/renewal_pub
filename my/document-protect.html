@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <title>SAFEHOMES</title>
+    <link rel="stylesheet" href="../style/Document.css" />
+  </head>
+  <body class="App">
+    <div id="DocumentPage" class="Page">
+      <header class="util-header">
+        <a href="my-page.html" class="back"></a>
+        <h1 class="header-title">문서함</h1>
+      </header>
+      <main class="content">
+        <ul class="content__tabs">
+          <li>
+            <input type="radio" name="tab" id="1" />
+            <label for="1">계약</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="2" checked />
+            <label for="2">보호</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="3"
+              onclick="window.location='document-residence.html'"
+            />
+            <label for="3">거주</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="tab"
+              id="4"
+              onclick="window.location='document-contract.html'"
+            />
+            <label for="4">종료</label>
+          </li>
+        </ul>
+        <div class="tab-content mt50">
+          <h2 class="page-title">보증금 보호 및 권리 강화 서류</h2>
+          <p class="page-title--sub mt15">
+            보증금을 지키고, 분쟁에 대비하기 위한 증빙 서류입니다
+          </p>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="font-bold">필수</p>
+                <p>(<span class="">0</span>/3)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  임대차 계약 신고필증
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  전입신고 완료 증빙
+                  <span class="font-gray">미등록</span>
+                </li>
+                <li class="click">
+                  보증보험 증서(HUG,HF,SGI)
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details class="toggle-content mt50" open>
+            <summary>
+              <div class="flex">
+                <p class="text-bold">권장</p>
+                <p>(<span class="">0</span>/1)</p>
+                <div class="border"></div>
+              </div>
+            </summary>
+            <div class="content__detail">
+              <ul class="doc-list mt30">
+                <li class="click">
+                  전세대출 관련 서류
+                  <span class="font-gray">미등록</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

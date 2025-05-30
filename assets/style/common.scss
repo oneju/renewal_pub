@@ -178,7 +178,7 @@ input {
     + label {
       display: block;
       width: 100%;
-      background: url("/assets/icons/open-folder-gray.svg") no-repeat;
+      background: url("../assets/icons/open-folder-gray.svg") no-repeat;
       background-position: left 15px center;
       background-color: #f5f6fa;
       padding: 20px 48px;
@@ -188,7 +188,7 @@ input {
     }
     &.on {
       + label {
-        background: url("/assets/icons/open-folder-blue.svg") no-repeat;
+        background: url("../assets/icons/open-folder-blue.svg") no-repeat;
         background-position: left 15px center;
         background-color: #fff;
         border: 1px solid #18171a;
@@ -206,12 +206,12 @@ input {
   flex-direction: column;
   gap: 10px;
   li {
-    list-style: url("/assets/icons/check-gray.svg") inside;
+    list-style: url("../assets/icons/check-gray.svg") inside;
     color: #bbb;
     font-size: 14px;
     font-family: "sr";
     &.on {
-      list-style: url("/assets/icons/check-blue.svg") inside;
+      list-style: url("../assets/icons/check-blue.svg") inside;
       color: #1142bf;
     }
   }
@@ -231,7 +231,7 @@ input {
   background-color: #fff;
   .back {
     position: absolute;
-    background: url("/assets/icons/left-arrow.svg") no-repeat;
+    background: url("../assets/icons/left-arrow.svg") no-repeat;
     width: 24px;
     height: 20px;
     font-size: 0;
@@ -313,7 +313,7 @@ input {
 
 .alert-list {
   li {
-    background: url("/assets/icons/alert-gray.svg") no-repeat;
+    background: url("../assets/icons/alert-gray.svg") no-repeat;
     background-position: left top 3px;
     padding-left: 22px;
 
@@ -332,7 +332,7 @@ input {
   position: relative;
   padding: 15px 10px;
   padding-left: 40px;
-  background: url("/assets/icons/location-icon-grayish.svg") no-repeat;
+  background: url("../assets/icons/location-icon-grayish.svg") no-repeat;
   background-color: #f5f6fa;
   background-size: 13px;
   background-position: 15px center;

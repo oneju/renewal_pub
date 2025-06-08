@@ -1,0 +1,205 @@
+@import "common.css";
+#ServicePage {
+  background-color: #f4f6f8;
+  .content {
+    padding: 20px;
+    .page-title {
+      font-family: "sm";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .slide {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: scroll;
+        width: calc(100% + 50px);
+        margin-left: -10px;
+        li {
+          .content {
+            position: relative;
+            width: 100%;
+            border-radius: 25px;
+            padding: 20px;
+            background-color: #fff;
+            width: 270px;
+            height: 267px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            .main-text {
+              font-family: "sm";
+              font-size: 20px;
+              line-height: 28px;
+            }
+            .sub-text {
+              font-family: "sr";
+              font-size: 14px;
+              line-height: 22px;
+              color: #8894a0;
+            }
+            img {
+              position: absolute;
+              right: 20px;
+              top: 20px;
+              width: 70px;
+              height: auto;
+            }
+          }
+          &.next {
+            padding: 20px;
+            width: 30px;
+            .content {
+              height: 220px;
+            }
+          }
+          &.none {
+            .content {
+              opacity: 0;
+              width: 0;
+            }
+          }
+        }
+      }
+      .slider-nav {
+        display: flex;
+        width: 40px;
+        justify-content: space-between;
+        div {
+          width: 8px;
+          height: 8px;
+          background-color: #dbddde;
+          border-radius: 100%;
+          &.on {
+            background-color: #1142bf;
+          }
+        }
+      }
+    }
+
+    .service-list-title {
+      p {
+        font-family: "sm";
+        font-size: 20px;
+      }
+      small {
+        display: block;
+        font-size: 14px;
+      }
+    }
+    .service-list {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 25px;
+      li {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        cursor: pointer;
+
+        background: url("../assets/icons/arrow-simple-right.svg") no-repeat #fff;
+        background-size: 6px;
+        background-position: right center;
+        p {
+          font-family: "sm";
+          font-size: 18px;
+
+          small {
+            display: block;
+            margin-top: 5px;
+            font-size: 13px;
+            font-family: "sr";
+            color: #6b7684;
+          }
+        }
+
+        .img {
+          width: 43px;
+          height: 43px;
+          background-color: #e8f3ff;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    .float-service-list {
+      display: flex;
+      justify-content: space-around;
+      //   gap: 30px;
+      .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        font-family: "sm";
+        font-size: 15px;
+        line-height: 21px;
+
+        .service-img {
+          height: 80px;
+          width: 80px;
+          border-radius: 100%;
+          background-color: #fff;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            height: 36px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .nav-bar {
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 10px 0;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      .img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          width: fit-content;
+        }
+      }
+      p {
+        font-family: "sr";
+        font-size: 12px;
+        color: #8597ab;
+        &.on {
+          color: #18171a;
+        }
+      }
+    }
+  }
+}

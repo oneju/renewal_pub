@@ -1,0 +1,39 @@
+@import "common.css";
+@import "MainOn.css";
+#MainPage {
+  background-color: #fff;
+  .content {
+    padding: 30px 20px;
+    .page-title {
+      font-size: 30px;
+    }
+    .select-tabs {
+      display: flex;
+      gap: 30px;
+      li {
+        font-family: "sm";
+        font-size: 20px;
+        color: #9b9fa8;
+        border: none;
+        padding-bottom: 15px;
+        &.on {
+          color: #17181a;
+          border-bottom: 3px solid #17181a;
+        }
+      }
+    }
+    .event-banner {
+      background-color: #f7f8fa;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding: 20px;
+      font-size: 16px;
+    }
+  }
+  .nav-bar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

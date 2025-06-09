@@ -1,0 +1,132 @@
+@import "Result.css";
+#ResultPage {
+  .content {
+    padding: 0 20px 100px;
+    &.insur {
+      background-color: transparent;
+      .toggle-content--border {
+        margin: 0;
+        margin-top: 30px;
+      }
+    }
+    .grid-list {
+      dd {
+        position: relative;
+        font-family: "sr";
+        font-size: 15px;
+        .float-right {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    .toggle-content--small {
+      .summary {
+        font-family: "sm";
+        font-size: 16px;
+        span {
+          white-space: nowrap;
+        }
+        .small {
+          font-size: 15px;
+        }
+        &:before {
+          background-size: 14px;
+        }
+      }
+      .content__detail {
+        dd {
+          .flex-row {
+            gap: 10px;
+          }
+        }
+        .caption {
+          color: #8894a0;
+          font-family: "sr";
+          font-size: 12px;
+          margin-bottom: 16px;
+          text-align: right;
+          &.left {
+            text-align: left;
+          }
+        }
+        .dot-list {
+          li {
+            color: inherit;
+          }
+        }
+      }
+      &.before {
+        padding-top: 40px;
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          width: calc(100% + 30px);
+          margin-left: -15px;
+          position: absolute;
+          top: 0px;
+          height: 10px;
+          background-color: #f2f3f5;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08) inset;
+        }
+      }
+    }
+  }
+  .bottom-button {
+    .small {
+      display: block;
+      font-family: "sr";
+      font-size: 12px;
+      opacity: 0.9;
+      margin-top: 5px;
+    }
+  }
+}
+#ConfirmNotice {
+  .content {
+    .main-comment {
+      font-family: "sm";
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .detail-comment {
+      font-family: "sr";
+      font-size: 14px;
+      line-height: 24px;
+      color: #8894a0;
+    }
+    .toggle-content {
+      summary {
+        font-size: 15px;
+        &:before {
+          background-size: 14px;
+        }
+      }
+      .content__detail {
+        color: #6b7684;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+    .dot-list {
+      li {
+        font-family: "sr";
+        font-size: 14px;
+        line-height: 24px;
+        position: relative;
+        padding-left: 12px;
+        text-align: left;
+        &::before {
+          content: "·";
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+      }
+      .gray {
+        color: #4e5968;
+      }
+    }
+  }
+}

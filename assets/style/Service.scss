@@ -1,105 +1,70 @@
 @import "common.css";
 #ServicePage {
-  background-color: #f4f6f8;
+  // background-color: #f4f6f8;
   .content {
-    padding: 20px;
+    padding: 30px 20px;
     .page-title {
       font-family: "sm";
       font-size: 24px;
       line-height: 36px;
     }
-    .slider {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .slide {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        overflow-x: scroll;
-        width: calc(100% + 50px);
-        margin-left: -10px;
-        li {
-          .content {
-            position: relative;
-            width: 100%;
-            border-radius: 25px;
-            padding: 20px;
-            background-color: #fff;
-            width: 270px;
-            height: 267px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-            .main-text {
-              font-family: "sm";
-              font-size: 20px;
-              line-height: 28px;
-            }
-            .sub-text {
-              font-family: "sr";
-              font-size: 14px;
-              line-height: 22px;
-              color: #8894a0;
-            }
-            img {
-              position: absolute;
-              right: 20px;
-              top: 20px;
-              width: 70px;
-              height: auto;
-            }
-          }
-          &.next {
-            padding: 20px;
-            width: 30px;
-            .content {
-              height: 220px;
-            }
-          }
-          &.none {
-            .content {
-              opacity: 0;
-              width: 0;
-            }
-          }
-        }
-      }
-      .slider-nav {
+    .customer-service {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 3fr 3fr 1fr;
+      gap: 5px;
+      .link {
+        height: 50px;
+        width: 100%;
+        background-color: #f7f8fc;
+        border-radius: 5px;
+        font-family: "sm";
+        font-size: 16px;
         display: flex;
-        width: 40px;
-        justify-content: space-between;
-        div {
-          width: 8px;
-          height: 8px;
-          background-color: #dbddde;
-          border-radius: 100%;
-          &.on {
-            background-color: #1142bf;
-          }
+        justify-content: center;
+        align-items: center;
+        color: #3b4a61;
+      }
+    }
+    .banner-section {
+      .banner {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: #e5edfb;
+        border-radius: 5px;
+        border: 1px solid #dee6ff;
+        p {
+          font-family: "sm";
+          font-size: 18px;
+          line-height: 28px;
+        }
+        .img {
+          position: absolute;
+          right: 20px;
+          background-color: #fff;
+          border-radius: 12px;
+          padding: 12px;
         }
       }
     }
-
-    .service-list-title {
-      p {
-        font-family: "sm";
-        font-size: 20px;
-      }
-      small {
+    .service-section {
+      &:before {
+        content: "";
         display: block;
-        font-size: 14px;
+        width: calc(100% + 40px);
+        height: 10px;
+        margin-left: -20px;
+        background-color: #f7f8fc;
       }
     }
     .service-list {
       background-color: #fff;
-      border-radius: 10px;
-      padding: 30px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
       display: flex;
       flex-direction: column;
       gap: 30px;
-      margin-top: 25px;
+      padding-top: 40px;
       li {
         display: flex;
         gap: 15px;
@@ -125,7 +90,7 @@
         .img {
           width: 43px;
           height: 43px;
-          background-color: #e8f3ff;
+          background-color: #f7f8fc;
           border-radius: 12px;
           display: flex;
           align-items: center;

@@ -37,3 +37,41 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+#ChoiceAlign {
+  padding: 20px;
+  .content {
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    .main-comment {
+      font-family: "sm";
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .detail-comment {
+      font-family: "sr";
+      font-size: 15px;
+      line-height: 24px;
+      color: #4e5968;
+    }
+    .button-flex {
+      height: 60px;
+      display: flex;
+      gap: 14px;
+      button {
+        font-family: "sr";
+        font-size: 18px;
+      }
+    }
+    .extra-comment {
+      color: #8894a0;
+      font-family: "sr";
+      font-size: 12px;
+    }
+  }
+}

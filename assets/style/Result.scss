@@ -21,13 +21,6 @@
   }
   .content {
     background-color: #fff;
-    padding: 40px 20px;
-    &.insur {
-      background-color: transparent;
-      .toggle-content--border {
-        margin: 0;
-      }
-    }
     .content__tabs {
       background-color: #f5f6fa;
       display: flex;
@@ -253,25 +246,7 @@
       color: #18171a;
     }
   }
-  .toggle-content--small {
-    summary {
-      font-family: "sm";
-      font-size: 16px;
-      &.small {
-        font-size: 15px;
-      }
-      &:before {
-        background-size: 14px;
-      }
-    }
-    .content__detail {
-      dd {
-        .flex-row {
-          gap: 10px;
-        }
-      }
-    }
-  }
+
   ////////////////////////////////////////
   ////////////////////////////////////////
   ////////////////////////////////////////

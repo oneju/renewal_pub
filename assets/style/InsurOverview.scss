@@ -1,0 +1,16 @@
+@import "common.css";
+#OverviewPage {
+  .content {
+    padding: 40px 20px;
+    .page-title {
+      font-family: "sm";
+      font-size: 20px;
+    }
+    .page-title--sub {
+      font-family: "sr";
+      font-size: 14px;
+      line-height: 24px;
+      color: #6b7684;
+    }
+  }
+}

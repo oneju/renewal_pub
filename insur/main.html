@@ -20,56 +20,62 @@
     <link rel="stylesheet" href="../style/InsureMain.css" />
   </head>
   <body class="App">
-    <div id="MainPage" class="Page">
-      <div class="content">
-        <h1 class="page-title">전세 안심 진단</h1>
-        <ul class="select-tabs mt40">
-          <li class="click">안심 진단 리포트</li>
-          <li class="on">보증보험 가심사</li>
-        </ul>
-        <div class="event-banner">
+    <div class="PageTemplate">
+      <div id="NewIntroPage" class="Page-Wrap">
+        <div class="content">
+          <h1 class="page-title">전세 안심 진단</h1>
+          <div class="bloc-tabs simple mt40">
+            <ul class="g2">
+              <li class="click">정밀진단 리포트</li>
+              <li class="active-tabs">보증보험 정밀진단</li>
+            </ul>
+          </div>
+          <!-- <div class="event-banner">
           <img src="../assets/image/event-banner-img.svg" alt="" width="24" />
           세이프홈즈 친구 공유 이벤트
+        </div> -->
+          <div class="input-group mt50">
+            <input
+              type="text"
+              class="text-type border-f"
+              placeholder="주소를 입력해 주세요"
+            />
+          </div>
         </div>
-        <div class="input-group mt50">
-          <input
-            type="text"
-            class="black-border-text"
-            placeholder="주소를 입력해 주세요"
-          />
-          <button>버튼</button>
+        <div class="event-banner mt30">
+          <div class="event-tag">혜택</div>
+          <div class="event-divider"></div>
+          <div class="event-content">
+            담당 중개사에게 결과를 공유하고,<br />정밀진단 이용권을 받으세요
+          </div>
+        </div>
+        <ul class="history-list">
+          <li>
+            <p>
+              서울특별시 노원구 한글비석로 91 하계1차청구아파트 제107동 제7층
+            </p>
+            <small class="font-blue">보증보험 정밀 심사</small>
+          </li>
+        </ul>
+        <div class="hitory-list-link click">
+          <img src="../assets/image/three-dot.svg" alt="" />
+          <p>조회내역 15건 전체보기</p>
         </div>
       </div>
-      <div class="hitory-list-link click">
-        <img src="../assets/image/three-dot.svg" alt="" />
-        <p>조회내역이 없습니다</p>
-      </div>
-      <ul class="nav-bar">
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/nav/nav-home-blue.svg" />
-          </div>
-          <p class="on">집 진단하기</p>
-        </li>
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/nav/nav-my-gray.svg" />
-          </div>
-          <p>우리 집</p>
-        </li>
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/nav/nav-comm-gray.svg" />
-          </div>
-          <p>상담</p>
-        </li>
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/nav/nav-etc-gray.svg" />
-          </div>
-          <p>더보기</p>
-        </li>
-      </ul>
+      <nav class="NavigationTab" role="navigation">
+        <a class="home on">
+          <span>진단</span>
+        </a>
+        <a class="dashboard" prefetch>
+          <span>우리 집</span>
+        </a>
+        <a class="qa">
+          <span>상담</span>
+        </a>
+        <a class="more">
+          <span>더보기</span>
+        </a>
+      </nav>
     </div>
   </body>
   <dialog id="ChoiceAlign">

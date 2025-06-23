@@ -17,55 +17,57 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <title>SAFEHOMES</title>
-    <link rel="stylesheet" href="/style/Main.css" />
+    <link rel="stylesheet" href="../style/Main.css" />
   </head>
   <body class="App">
-    <div id="MainPage" class="Page">
-      <div class="content">
-        <h1 class="page-title">
-          우리 집,<br />
-          숨은 이력 찾기
-        </h1>
-        <p class="sub-title mt15">
-          혹시 모를 전세 위험, 진단이 유일한 대비입니다
-        </p>
-        <div class="input-group mt50">
-          <input
-            type="text"
-            class="black-border-text"
-            placeholder="주소를 입력해 주세요"
-          />
-          <button>버튼</button>
+    <div class="PageTemplate">
+      <div id="MainPage" class="Page-Wrap">
+        <div class="content">
+          <h1 class="page-title">
+            우리 집,<br />
+            숨은 이력 찾기
+          </h1>
+          <p class="sub-title mt15">
+            혹시 모를 전세 위험, 진단이 유일한 대비입니다
+          </p>
+          <div class="input-group mt50">
+            <input
+              type="text"
+              class="black-border-text"
+              placeholder="주소를 입력해 주세요"
+            />
+            <button>버튼</button>
+          </div>
+          <ul class="search-result mt30">
+            <li class="click" onclick="window.location='step_1.html'">
+              <p>
+                서울특별시 관악구 장군봉5길 30-12 루시[
+                <span>봉천동 1529-17</span> ]
+              </p>
+            </li>
+          </ul>
         </div>
-        <ul class="search-result mt30">
-          <li class="click" onclick="window.location='step_1.html'">
-            <p>
-              서울특별시 관악구 장군봉5길 30-12 루시[
-              <span>봉천동 1529-17</span> ]
-            </p>
+        <ul class="nav-bar">
+          <li class="click">
+            <div class="img">
+              <img src="../assets/icons/location-icon-blue.svg" />
+            </div>
+            <p class="on">집 진단하기</p>
+          </li>
+          <li class="click">
+            <div class="img">
+              <img src="../assets/icons/person-icon-grayish.svg" />
+            </div>
+            <p>우리 집</p>
+          </li>
+          <li class="click">
+            <div class="img">
+              <img src="../assets/icons/etc-icon-grayish.svg" />
+            </div>
+            <p>전체</p>
           </li>
         </ul>
       </div>
-      <ul class="nav-bar">
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/location-icon-blue.svg" />
-          </div>
-          <p class="on">집 진단하기</p>
-        </li>
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/person-icon-grayish.svg" />
-          </div>
-          <p>우리 집</p>
-        </li>
-        <li class="click">
-          <div class="img">
-            <img src="../assets/icons/etc-icon-grayish.svg" />
-          </div>
-          <p>전체</p>
-        </li>
-      </ul>
     </div>
   </body>
   <dialog id="WelcomeCoupon">

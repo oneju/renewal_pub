@@ -17,27 +17,32 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <title>SAFEHOMES</title>
-    <link rel="stylesheet" href="../style/FormStep.css" />
+    <link rel="stylesheet" href="../style/InsurStep.css" />
   </head>
   <body class="App">
-    <div id="StepPage" class="Page">
-      <header class="util-header">
+    <div class="PageTemplate">
+      <header class="Util-Header">
         <a class="back" href="main.html">뒤로가기</a>
-        <h1 class="header-title">보증보험 무료 가심사</h1>
+        <h1 class="header-title">보증보험 간편진단</h1>
       </header>
-      <div class="content">
+      <div id="StepPage" class="Page-Wrap Use-Head bg-w">
         <h2 class="page-title">보증금 입력</h2>
-        <div class="input-group mt50">
-          <input type="text" class="text-type left" placeholder="백만원 단위" />
-          <div class="pr">만원</div>
-          <p class="input-result mt20">8억원</p>
+        <div class="page-content mt50">
+          <div class="prw">
+            <input
+              type="text"
+              class="text-type"
+              placeholder="백만원 단위"
+              id="deposit"
+              name="deposit"
+            />
+            <div class="pr">백만원</div>
+          </div>
+          <!-- <p className="amount-label mt20">1억원</p> -->
         </div>
       </div>
-      <div class="page-bottom">
-        <button
-          class="bottom-button blue"
-          onclick="window.location='step_2.html'"
-        >
+      <div class="Page-btn">
+        <button class="basic blue" onclick="window.location='step_2.html'">
           다음
         </button>
       </div>

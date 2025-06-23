@@ -1,3 +1,4 @@
+$left-arrow: url("../assets/icons/left-arrow.svg");
 .App {
   background-color: #fff;
   //   width: 100vw;
@@ -39,5 +40,235 @@
   &:has(dialog[open]) {
     overflow: hidden;
     height: 100vh;
+  }
+}
+
+////////////////
+////////////////
+////////////////
+////////////////
+////////////////
+////////////////
+
+// 바디 시작
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "sr";
+  font-size: 15px;
+  line-height: 1.5;
+  color: #18171a;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100dvh;
+}
+@media screen and (max-width: 1220px) {
+  body {
+    display: block;
+    overflow: hidden;
+    box-shadow: none;
+  }
+}
+// 바디 끝
+
+// 헤더 시작
+body {
+  .PageTemplate {
+    .Util-Header {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      top: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #ededed;
+      box-shadow: none;
+      padding: 0 30px;
+      max-width: 600px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 11;
+      border-bottom: 1px solid #ededed;
+      &.sb {
+        justify-content: space-between;
+      }
+      .back {
+        cursor: pointer;
+        position: absolute;
+        background: $left-arrow no-repeat;
+        width: 24px;
+        height: 20px;
+        font-size: 0;
+        left: 30px;
+      }
+      .header-title {
+        font-family: "sr";
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1220px) {
+  body {
+    .PageTemplate {
+      .Util-Header {
+        padding: 0 20px;
+        .back {
+          left: 20px;
+        }
+      }
+    }
+  }
+}
+// 헤더 끝
+
+// 메인 시작
+body {
+  .PageTemplate {
+    background-color: #f6f8fa;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .Page-Wrap {
+      overflow-y: auto;
+      overflow-x: hidden;
+      &.Use-Navi {
+        height: calc(100dvh - 62px);
+        padding: 40px 30px;
+      }
+      &.Use-Head {
+        height: calc(100dvh - 60px);
+        padding: 40px 30px;
+        &.Use-btn {
+          padding: 40px 30px 130px;
+        }
+        &.Use-Btn02 {
+          padding: 40px 30px 185px;
+        }
+      }
+
+      &.bg-w {
+        background: #fff;
+      }
+      .page-content {
+        margin-top: 50px;
+        &.n-margin {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  body {
+    .PageTemplate {
+      .Page-Wrap {
+        &.Use-Navi {
+          padding: 40px 20px;
+        }
+        &.Use-Head {
+          padding: 40px 20px;
+          &.Use-btn {
+            padding: 40px 20px 130px;
+          }
+          &.Use-Btn02 {
+            padding: 40px 20px 185px;
+          }
+        }
+      }
+    }
+  }
+}
+// 메인 끝
+
+body {
+  .PageTemplate {
+    &:has(.Util-Header) {
+      // display: grid;
+      // grid-template-rows: 60px 1fr;
+    }
+    &:has(.NavigationTab) {
+      // display: grid;
+      // grid-template-rows: 1fr 60px;
+    }
+    &:has(.Util-Header) {
+      &:has(.NavigationTab) {
+        // display: grid;
+        // grid-template-rows: 60px 1fr 60px;
+      }
+    }
+    &:has(.Woori-Layout) {
+      button.blue {
+        background-color: #3996f3 !important;
+      }
+    }
+
+    .Page-Wrap {
+      // height: 100vh;
+      // height: 100dvh;
+      -ms-overflow-style: none;
+
+      // &.Use-Btn {
+      // padding-bottom: 110px;
+      // &.Border {
+      //   padding: inherit 30px 110px;
+      // }
+      // }
+
+      .page-title__sub {
+        color: #8894a0;
+        font-family: "sr";
+        font-size: 16px;
+        line-height: 27px;
+      }
+    }
+    // .Page {
+    //   background-color: #fff;
+    //   height: 100dvh;
+    //   overflow: hidden;
+    //   &:has(.Util-Header) {
+    //     padding-top: 60px;
+    //   }
+    // }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  body {
+    .Util-Header {
+      padding: 0 20px;
+    }
+    .PageTemplate {
+      margin: 0 auto;
+      max-width: 600px;
+      width: 100%;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .Page-Wrap {
+        padding: 40px 20px 30px;
+      }
+    }
+    .NavigationTab {
+      // left: 0;
+      // transform: translateX(0);
+      margin: 0;
+      padding: 0;
+    }
   }
 }

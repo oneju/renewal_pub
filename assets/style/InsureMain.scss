@@ -1,77 +1,244 @@
-@import "common.css";
-@import "MainOn.css";
-#MainPage {
-  background-color: #fff;
-  .content {
-    padding: 30px 20px;
-    .page-title {
-      font-size: 30px;
+@import "common_insur.css";
+$arrow-simple-right: url("../assets/icons/arrow-simple-right.svg");
+$arrow-simple-right-white: url("../assets/icons/insur/arrow-simple-right-white.svg");
+
+#NewIntroPage {
+  padding: 50px 40px;
+  .page-title {
+    font-family: "sb";
+    font-size: 34px;
+  }
+  .sub-title {
+    color: #4e5968;
+    font-size: 17px;
+  }
+  .input-group {
+    position: relative;
+    .text-type {
+      height: 70px;
+      padding: 0 60px 0 20px;
+      &.border-f {
+        border: 2px solid #18171a;
+        border-radius: 10px;
+      }
     }
-    .select-tabs {
-      display: flex;
-      gap: 30px;
-      li {
-        font-family: "sm";
-        font-size: 20px;
-        color: #9b9fa8;
-        border: none;
-        padding-bottom: 15px;
-        &.on {
-          color: #17181a;
-          border-bottom: 3px solid #17181a;
+    input:placeholder-shown + button {
+      display: none;
+    }
+  }
+  .history-list {
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.04);
+    max-height: 334px;
+    overflow: hidden;
+    li {
+      padding: 15px 50px 15px 15px;
+      background: #fff $arrow-simple-right no-repeat;
+      background-position: right 15px center;
+      background-size: 6px;
+      cursor: pointer;
+      border-bottom: 1px solid #ededed;
+      &:last-child {
+        border-bottom: 0;
+      }
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.6;
+      }
+      small {
+        display: block;
+        color: #8894a0;
+        font-size: 13px;
+        margin-top: 10px;
+        &.font-blue {
+          color: #1142bf;
         }
       }
     }
-    .event-banner {
-      background-color: #f7f8fa;
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      width: calc(100% + 40px);
-      margin-left: -20px;
-      padding: 20px;
-      font-size: 16px;
+  }
+  &:has(.result-address-wrap) {
+    .history-list {
+      display: none;
+    }
+    .hitory-list-link {
+      display: none;
     }
   }
-  .nav-bar {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-#ChoiceAlign {
-  padding: 20px;
-  .content {
-    height: fit-content;
-    position: absolute;
-    bottom: 20px;
-    width: calc(100% - 40px);
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    .main-comment {
-      font-family: "sm";
-      font-size: 20px;
-      line-height: 30px;
+  .hitory-list-link {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 17px;
     }
-    .detail-comment {
-      font-family: "sr";
-      font-size: 15px;
-      line-height: 24px;
-      color: #4e5968;
-    }
-    .button-flex {
-      height: 60px;
-      display: flex;
-      gap: 14px;
-      button {
-        font-family: "sr";
-        font-size: 18px;
-      }
-    }
-    .extra-comment {
+    p {
       color: #8894a0;
       font-family: "sr";
+    }
+  }
+
+  .bloc-tabs {
+    &.simple {
+      background-color: transparent;
+      &:before {
+        display: none;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+        li {
+          cursor: pointer;
+          padding: 8px 0;
+          font-size: 20px;
+          color: #9b9fa8;
+          text-align: center;
+          font-family: "sr";
+          &.active-tabs {
+            color: #18171a;
+            font-family: "sm";
+            border-bottom: 3px solid #18171a;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+  .event-banner {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: $arrow-simple-right-white no-repeat #1f212e;
+    background-size: 8px;
+    background-position: right 20px center;
+    border-radius: 5px;
+    .event-tag {
+      color: #ffc194;
+      font-size: 15px;
+      font-family: "sm";
+    }
+    .event-divider {
+      width: 1px;
+      height: 13px;
+      background-color: #fff;
+      opacity: 0.2;
+    }
+    .event-content {
+      font-size: 15px;
+      font-family: "sm";
+      line-height: 25px;
+      color: #fff;
+    }
+  }
+}
+
+//
+
+//
+
+@media screen and (max-width: 1220px) {
+  #NewIntroPage {
+    padding: 40px 20px;
+    .page-title {
+      font-size: 32px;
+    }
+    .sub-title {
+      font-size: 16px;
+    }
+    .history-list {
+      li {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+////////////////////
+/////navigation/////
+////////////////////
+////////////////////
+$navi01: url("../assets/icons/nav/nav-home-gray.svg");
+$navi01-on: url("../assets/icons/nav/nav-home-blue.svg");
+$navi02: url("../assets/icons/nav/nav-my-gray.svg");
+$navi02-on: url("../assets/icons/nav/nav-my-blue.svg");
+$navi03: url("../assets/icons/nav/nav-comm-gray.svg");
+$navi03-on: url("../assets/icons/nav/nav-comm-blue.svg");
+$navi04: url("../assets/icons/nav/nav-etc-gray.svg");
+$navi04-on: url("../assets/icons/nav/nav-etc-blue.svg");
+
+.NavigationTab {
+  background: #fff;
+  border-top: 1px solid #ededed;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  margin-left: 275px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 30px;
+  a {
+    text-align: center;
+    span {
+      display: block;
+      padding: 34.5px 0 8.5px;
+      color: #8597ab;
       font-size: 12px;
+      cursor: pointer;
+    }
+    &.on {
+      span {
+        color: #18171a;
+        font-family: "sm";
+      }
+    }
+    &.home {
+      background-size: 22px;
+      background-position: center top 8px;
+      &.on {
+        background: $navi01-on no-repeat;
+        background-size: 22px;
+        background-position: center top 8px;
+      }
+    }
+    &.dashboard {
+      background: $navi02 no-repeat;
+      background-size: 18px;
+      background-position: center top 8px;
+      &.on {
+        background-size: 18px;
+        background-position: center top 8px;
+      }
+    }
+    &.qa {
+      background: $navi03 no-repeat;
+      background-size: 22px;
+      background-position: center top 13px;
+      &.on {
+        background-size: 22px;
+        background-position: center top 13px;
+      }
+    }
+    &.more {
+      background: $navi04 no-repeat;
+      background-size: 24px;
+      background-position: center top 17px;
+      &.on {
+        background-size: 24px;
+        background-position: center top 17px;
+      }
     }
   }
 }

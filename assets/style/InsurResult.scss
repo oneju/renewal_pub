@@ -1,112 +1,140 @@
-@import "Result.css";
+@import "./common_insur.css";
+$location-icon-gray: url("../assets/icons/location-icon-gray.svg");
 #ResultPage {
-  .content {
-    padding: 0 20px 100px;
-    &.insur {
-      background-color: transparent;
-      .toggle-content--border {
-        margin: 0;
-        margin-top: 30px;
+  padding: 0;
+  padding-bottom: 130px;
+  .page-content {
+    margin: 30px 20px;
+    .info-card {
+      padding: 20px 15px;
+      border-radius: 10px;
+      background: #fff;
+      .address-display {
+        border-radius: 10px;
+        background: $location-icon-gray no-repeat;
+        padding: 15px 15px 15px 37px;
+        background-color: #f5f6fa;
+        background-size: 12px;
+        background-position: top 18px left 15px;
       }
-    }
-    .grid-list {
-      dd {
-        position: relative;
-        font-family: "sr";
-        font-size: 15px;
-        .float-right {
-          position: absolute;
-          right: 0;
+      .info-list {
+        dl {
+          dd {
+            width: calc(100% - 150px);
+          }
         }
       }
     }
-    .toggle-content--small {
+    .element-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
       .summary {
+        font-size: 18px;
         font-family: "sm";
-        font-size: 16px;
-        span {
-          white-space: nowrap;
-        }
-        .small {
-          font-size: 15px;
-        }
-        &:before {
-          background-size: 14px;
+      }
+      .info-list {
+        .part {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          dl {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            dt {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              color: #4e5968;
+              img {
+                width: 14px;
+                height: 14px;
+              }
+            }
+            dd {
+              .none {
+                color: #999;
+              }
+            }
+          }
+          &:nth-child(2) {
+            border-top: 1px dashed #ededed;
+            margin-top: 20px;
+            padding-top: 20px;
+          }
         }
       }
-      .content__detail {
-        dd {
-          .flex-row {
-            gap: 10px;
-          }
-        }
-        .caption {
-          color: #8894a0;
-          font-family: "sr";
-          font-size: 12px;
-          margin-bottom: 16px;
-          text-align: right;
-          &.left {
-            text-align: left;
-          }
-        }
-        .dot-list {
-          li {
-            color: inherit;
+      .table-box {
+        table {
+          tbody {
+            td {
+              small {
+                font-size: 13px;
+                color: #8894a0;
+              }
+              &.gray {
+                color: #999;
+              }
+            }
           }
         }
       }
-      &.before {
-        padding-top: 40px;
-        position: relative;
-        &:before {
-          content: "";
-          display: block;
-          width: calc(100% + 30px);
-          margin-left: -15px;
-          position: absolute;
-          top: 0px;
-          height: 10px;
-          background-color: #f2f3f5;
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08) inset;
-        }
+      .caption {
+        color: #8894a0;
+        font-size: 12px;
       }
     }
   }
-  .bottom-button {
+  button.basic {
+    &.white {
+      background-color: #fff;
+      color: #1142bf;
+      border: 1px solid #1142bf;
+    }
     .small {
       display: block;
       font-family: "sr";
       font-size: 12px;
       opacity: 0.9;
       margin-top: 5px;
+      del {
+        color: #999;
+        margin-right: 10px;
+      }
     }
   }
 }
+
 #ConfirmNotice {
   .content {
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
     .main-comment {
       font-family: "sm";
       font-size: 20px;
       line-height: 30px;
     }
+    .sub-comment {
+      font-size: 16px;
+      color: #8894a0;
+    }
     .detail-comment {
       font-family: "sr";
       font-size: 14px;
       line-height: 24px;
-      color: #8894a0;
-    }
-    .toggle-content {
-      summary {
-        font-size: 15px;
-        &:before {
-          background-size: 14px;
-        }
-      }
-      .content__detail {
-        color: #6b7684;
-        font-size: 14px;
-        line-height: 24px;
+      color: #6b7684;
+      small {
+        color: #999;
       }
     }
     .dot-list {

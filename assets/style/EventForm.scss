@@ -1,0 +1,141 @@
+@import "./common_insur.scss";
+$arrow-simple-top: url("../assets/icons/arrow-simple-top.svg");
+
+#EventForm {
+  .page-title {
+    &.slim {
+      font-family: "sr";
+    }
+    .bg-green {
+      background-color: #d6f6e9;
+    }
+  }
+  .page-content {
+    .prw {
+      .text-type {
+        font-size: 20px;
+      }
+      .pr {
+        .search {
+          width: 50px;
+          height: 30px;
+          background-color: #edf0f7;
+          border-radius: 5px;
+          color: #1142bf;
+          font-size: 14px;
+          font-family: "sm";
+        }
+      }
+    }
+    .search-result-list {
+      border-radius: 10px;
+      border: 1px solid #ededed;
+      li {
+        padding: 15px 20px;
+        border-bottom: 1px solid #ededed;
+        &:last-child {
+          border-bottom: 0;
+        }
+        p {
+          font-family: "sr";
+          font-size: 14px;
+          small {
+            display: block;
+            margin-top: 5px;
+            font-size: 11px;
+            color: #999;
+          }
+        }
+      }
+    }
+    .realtor-choice-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+        display: flex;
+        align-items: center;
+        background-color: #f5f6fa;
+        border-radius: 5px;
+        padding: 20px 15px;
+        .radio-type {
+          background-color: #fff;
+        }
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #17181a;
+          small {
+            font-family: "sr";
+            font-size: 12px;
+            color: #999;
+          }
+        }
+        &:has(.radio-type:disabled) {
+          background-color: #f2f3f5;
+          .radio-type {
+            border: 1px solid #999;
+            position: relative;
+            &::before {
+              content: "";
+              display: block;
+              height: 20px;
+              width: 1px;
+              position: absolute;
+              background-color: #999;
+              transform: rotate(45deg);
+              left: 50%;
+            }
+          }
+          label {
+            color: #999;
+          }
+        }
+        &:has(.radio-type:checked) {
+          background-color: #fff;
+          border: 1px solid #17181a;
+          position: relative;
+          margin-bottom: 30px;
+          &:after {
+            content: "";
+            border-bottom: 1px dashed #ededed;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+          }
+        }
+      }
+    }
+    .input-label-group {
+      .label {
+        font-size: 15px;
+        font-family: "sr";
+        color: #4e5968;
+      }
+    }
+    .toggle {
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $arrow-simple-top no-repeat;
+        background-position: right top;
+        background-size: 16px;
+      }
+      &.on {
+        // background: $arrow-simple-bottom no-repeat;
+      }
+    }
+  }
+}
+.Page-btn {
+  &.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

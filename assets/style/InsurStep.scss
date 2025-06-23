@@ -1,0 +1,59 @@
+@import "./common_insur.css";
+#StepPage {
+  position: relative;
+  .radio-select-list {
+    li {
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+#ProcessNotice {
+  padding: 20px;
+  .content {
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    .main-comment {
+      font-family: "sm";
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .flex {
+      display: flex;
+      gap: 15px;
+      p {
+        font-family: "sr";
+        font-size: 18px;
+        color: #4e5968;
+        span {
+          font-family: "sm";
+          color: #1142bf;
+        }
+      }
+    }
+    .check-list {
+      background-color: #f5f6fa;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+        list-style: url("../assets/icons/check-gray.svg") inside;
+        color: #bbb;
+        font-size: 14px;
+        font-family: "sr";
+        &.on {
+          list-style: url("../assets/icons/check-blue.svg") inside;
+          color: #1142bf;
+        }
+      }
+    }
+  }
+}

@@ -17,64 +17,47 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <title>SAFEHOMES</title>
-    <link rel="stylesheet" href="../style/FormStep.css" />
+    <link rel="stylesheet" href="../style/InsurStep.css" />
   </head>
   <body class="App">
-    <div id="StepPage" class="Page">
-      <header class="util-header">
+    <div class="PageTemplate">
+      <header class="Util-Header">
         <a class="back" href="main.html">뒤로가기</a>
-        <h1 class="header-title">보증보험 무료 가심사</h1>
+        <h1 class="header-title">보증보험 간편진단</h1>
       </header>
-      <div class="content">
-        <h2 class="page-title">선순위 보증금 총액 입력</h2>
-        <ul class="radio-select-list mt50">
-          <li>
-            <input
-              type="radio"
-              class="radio-type"
-              name="radio-2"
-              id="1"
-              checked
-            />
-            <label for="1">정보 없음 / 다음에 입력</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              class="radio-type"
-              name="radio-2"
-              id="2"
-              checked
-            />
-            <label for="2">지금 입력</label>
-          </li>
-        </ul>
-        <div class="input-group mt20">
-          <input type="text" class="text-type left" placeholder="백만원 단위" />
-          <div class="pr">만원</div>
-          <p class="input-result mt20">1억 1천만원</p>
+      <div id="StepPage" class="Page-Wrap Use-Head bg-w">
+        <h2 class="page-title">선순위 보증금 입력</h2>
+        <div class="page-content">
+          <ul class="radio-select-list">
+            <li>
+              <input type="radio" class="radio-type" name="radio-2" id="1" />
+              <label for="1">선순위 보증금을 몰라요</label>
+            </li>
+            <li>
+              <input type="radio" class="radio-type" name="radio-2" id="2" />
+              <label for="2">선순위 보증금을 알고 있어요</label>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="page-bottom">
-        <button class="bottom-button blue">다음</button>
+      <div class="Page-btn">
+        <button class="basic blue">다음</button>
       </div>
     </div>
-    <dialog id="ProcessNotice" open>
-      <div class="content">
-        <h3 class="main-comment">
-          [봉천동 1529-17]의 보증보험 가입 가능 여부를 확인 중입니다
-        </h3>
-        <div class="flex mt20">
-          <p><span> 100% </span></p>
-          <p>가심사 진행 중 ..</p>
-        </div>
-        <ul class="check-list mt20">
-          <li class="on">건축물대장상 주택 종류 및 용도 확인</li>
-          <li class="on">위반건축물 등재 여부 확인</li>
-          <li class="on">입력된 보증금의 가입 조건 확인</li>
-          <li class="on">HUG 악성 임대인 명단 포함 여부 확인</li>
-        </ul>
-      </div>
-    </dialog>
   </body>
+  <dialog id="ProcessNotice">
+    <div class="content">
+      <h3 class="main-comment">
+        [봉천동 1529-17]의 보증보험 가입 가능 여부를 확인 중입니다
+      </h3>
+      <div class="flex mt20">
+        <p><span> 100% </span></p>
+        <p>간편진단 진행 중 ..</p>
+      </div>
+      <ul class="check-list mt20">
+        <li class="on">건축물대장상 주택 종류 및 용도 확인</li>
+        <li class="on">입력된 보증금의 가입 조건 확인</li>
+      </ul>
+    </div>
+  </dialog>
 </html>

@@ -1,57 +1,57 @@
 @import "common.css";
 #StepPage {
   position: relative;
-  .content {
-    margin: 40px 20px;
-    .page-title {
-      font-family: "sm";
-      font-size: 24px;
-      line-height: 36px;
-    }
-    .page-title__sub {
-      color: #8894a0;
-      font-family: "sr";
-      font-size: 16px;
-    }
-    .radio-select-list {
-      li {
-        height: 60px;
-        padding: 21px 0;
-      }
-    }
-    .input-group {
-      position: relative;
-      .pr {
-        width: fit-content;
-        height: fit-content;
-        position: absolute;
-        right: 0;
-        top: 19px;
-        font-family: "sr";
-        font-size: 18px;
-        color: #bbb;
-      }
-      .input-result {
-        width: 100%;
-        text-align: right;
-        font-family: "sm";
-        font-size: 20px;
-        color: #1142bf;
-      }
-    }
-  }
-  .page-bottom {
-    position: absolute;
-    padding: 0 20px 20px;
-    bottom: 0;
-    width: 100%;
-    .bottom-button {
-      height: 60px;
-      width: 100%;
-      font-family: "sr";
-      font-size: 18px;
-    }
-  }
+  // .content {
+  //   margin: 40px 20px;
+  //   .page-title {
+  //     font-family: "sm";
+  //     font-size: 24px;
+  //     line-height: 36px;
+  //   }
+  //   .page-title__sub {
+  //     color: #8894a0;
+  //     font-family: "sr";
+  //     font-size: 16px;
+  //   }
+  //   .radio-select-list {
+  //     li {
+  //       height: 60px;
+  //       padding: 21px 0;
+  //     }
+  //   }
+  //   .input-group {
+  //     position: relative;
+  //     .pr {
+  //       width: fit-content;
+  //       height: fit-content;
+  //       position: absolute;
+  //       right: 0;
+  //       top: 19px;
+  //       font-family: "sr";
+  //       font-size: 18px;
+  //       color: #bbb;
+  //     }
+  //     .input-result {
+  //       width: 100%;
+  //       text-align: right;
+  //       font-family: "sm";
+  //       font-size: 20px;
+  //       color: #1142bf;
+  //     }
+  //   }
+  // }
+  // .page-bottom {
+  //   position: absolute;
+  //   padding: 0 20px 20px;
+  //   bottom: 0;
+  //   width: 100%;
+  //   .bottom-button {
+  //     height: 60px;
+  //     width: 100%;
+  //     font-family: "sr";
+  //     font-size: 18px;
+  //   }
+  // }
 }
 #ProcessNotice {
   padding: 20px;
